@@ -35,6 +35,7 @@ extension CGContextRef {
     func round() -> CGContextRef? { CGContextSetLineCap(self, .Round); CGContextSetLineJoin(self, .Round); return self }
     func clear(rect: CGRect? = nil) -> CGContextRef? { CGContextClearRect(self, rect ?? UIScreen.mainScreen().bounds) ;return self }
     
+    func color(color: UIColor) -> CGContextRef? { color.set(); return self }
     func stroke() -> CGContextRef? { CGContextStrokePath(self); return self }
     func fill() -> CGContextRef? { CGContextFillPath(self); return self }
     
