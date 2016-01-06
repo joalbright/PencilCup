@@ -1,5 +1,5 @@
 PODS:
-  - PencilCup (0.1.0)
+  - PencilCup (0.1.1)
 
 DEPENDENCIES:
   - PencilCup (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PencilCup: eeff3deb6689f655c7c78d741e7bdf989ee893e3
+  PencilCup: 97d3803c65447a92061553457f97bf2c07d7055e
 
 COCOAPODS: 0.39.0
