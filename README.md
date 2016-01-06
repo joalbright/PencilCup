@@ -1,21 +1,29 @@
 # PencilCup
 Tools built to help use CoreGraphics more Swiftly
 
-![Pencil Cup](./Sample/pencilcup.png)
+<!-- [![CI Status](http://img.shields.io/travis/Jo Albright/PencilCup.svg?style=flat)](https://travis-ci.org/Jo Albright/PencilCup) -->
 
----
+[![Version](https://img.shields.io/cocoapods/v/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
 
-- [Sample Project](./Sample) and specifically checkout the differences between [PencilCupView](./Sample/PencilCup/PencilCupView.swift) & [CoreGraphicsView](./Sample/PencilCup/CoreGraphicsView.swift)
-- [Code Snippets](./XcodeSnippets) to help with using the new operators
+<!-- [![License](https://img.shields.io/cocoapods/l/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
+[![Platform](https://img.shields.io/cocoapods/p/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup) -->
+
+![Pencil Cup](./pencilcup.png)
+
+## Usage
+
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
+
+Add these [Code Snippets](./XcodeSnippets) into Xcode to help with using the new operators.
 
 ### Motivation
 
-> Core Graphics is an amazingly useful library that I use in every app I build. But I also have spent a lot of time writing lines of code to draw things that are very simple.
+> Core Graphics is an amazingly useful library that I work with in every app I build. But I also have spent a lot of time writing lines of code to draw things that are very simple.
 
 **Main Problems**
 
 - each point on a path uses a new line of code
-- pass "context" with every CGContext function
+- you must pass "context" with every CGContext function
 - CGContext options set using functions instead of methods
 
 ```swift
@@ -51,9 +59,10 @@ CGContextStrokePath(context)
 
 ### New Pattern
 
-> Swift is build to allow the simplest while still being very explanatory. You now have the ability to set context options using extension methods. Infix operators open up the ability to build a multi point path on a single line of code.
+> You now have the ability to set context options using extension methods. Infix operators open up the ability to build a multi point path on a single line of code.
 
 **New Features**
+
 - typealiases PCPoint, PCSize, PCScale, PCDelta
 - CGRect extended with inset methods and global initializer functions
 - CGContextRef extended with methods that simplify setup
@@ -72,3 +81,22 @@ context ->- (140,99.75) -+- (150.28,49.72) -~- (150.5,48.64,151.56,47.94,152.64,
 context -~- (163.46,50.4,164.15,51.46,163.93,52.54) -+- (154.43,98.52) -□ nil
 ```
 *7 lines of code*
+
+<!--## Requirements-->
+
+## Installation
+
+PencilCup is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod "PencilCup"
+```
+
+## Author
+
+[Jo Albright](http://github.com/joalbright)
+
+## License
+
+PencilCup is available under the MIT license. See the LICENSE file for more info.

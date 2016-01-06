@@ -1,0 +1,6 @@
+framework module Pods_PencilCup_Example {
+  umbrella header "Pods-PencilCup_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
