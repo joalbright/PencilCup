@@ -4,9 +4,8 @@ Tools built to help use CoreGraphics more Swiftly
 <!-- [![CI Status](http://img.shields.io/travis/Jo Albright/PencilCup.svg?style=flat)](https://travis-ci.org/Jo Albright/PencilCup) -->
 
 [![Version](https://img.shields.io/cocoapods/v/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
-
-<!-- [![License](https://img.shields.io/cocoapods/l/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
-[![Platform](https://img.shields.io/cocoapods/p/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup) -->
+[![License](https://img.shields.io/cocoapods/l/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
+[![Platform](https://img.shields.io/cocoapods/p/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
 
 ![Pencil Cup](./pencilcup.png)
 
