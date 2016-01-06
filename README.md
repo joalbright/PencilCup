@@ -14,7 +14,9 @@ Tools built to help use CoreGraphics more Swiftly
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Add these [Code Snippets](./XcodeSnippets) into Xcode to help with using the new operators.
+Add these [Code Snippets](./XcodeSnippets) into Xcode to help with using the new operators. 
+
+Code Snippet Directory : **~/Library/Developer/Xcode/UserData/CodeSnippets/**
 
 ### Motivation
 
