@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		0E117C97BB6CFC0F231A54509D775ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		11D015843E124026BCD2F50704FB9BED /* PencilCup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */; };
-		2EE6D5881DCB8429B84A468BFB0C0446 /* PencilCup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8AAAA4D5D95D8CD65847251B33D3692C /* PencilCup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */; };
+		1BC7BB3EE63777E4BA7423DA422E7B8F /* PencilCup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F81428BA35FBC5A16184800DB0EA9B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		204A8910CB36A1B8DD6E2CDB38FD9F99 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B565F90509209C3AE4FC7759E5410 /* Operators.swift */; };
+		2C96886AAA9CE4C455AEA562D557360D /* PencilCup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */; };
+		8A3B74E450F8A0A02B28A462F2208A61 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3BCC2CC4CD4CED1F0F063B4781D2D /* Types.swift */; };
 		9141C982B02239E087E48D1476934DFE /* Pods-PencilCup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 783D25D621093CE2D709997B845E8F23 /* Pods-PencilCup_Example-dummy.m */; };
-		B0984DD3012A71D8239185902E4E719F /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1005C25E1B5CDB356B22735B1740DFF /* ReplaceMe.swift */; };
+		B22B8FB59522FA5A332D788C88991D02 /* PencilCup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */; };
 		B35AEDA433901338C04DC9E899A1A052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		B83DD5C672337F22F4707284EE35A8D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		B866105F5C3370B20A3ACC85F7343E65 /* Pods-PencilCup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B516F6E82FA8AAB8D52F0AA7C4280C /* Pods-PencilCup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E72491C54226C7A3E2E6151789BB540A /* Pods-PencilCup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB433770A9F39614B20F56FA3F5D2088 /* Pods-PencilCup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4458097FA2A8158B99A274DE27CB407 /* Pods-PencilCup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */; };
@@ -25,26 +26,27 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8833D92FF9DA644D01F528C684D362D5;
+			remoteGlobalIDString = 80FC1A80DA043A8F9F71F59C949414A3;
 			remoteInfo = PencilCup;
 		};
-		8696BCDB28DEAC0C367E5CB743D2866C /* PBXContainerItemProxy */ = {
+		6ECF863AE9B61C30631BE9FC7C1DD51D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6E62E67B5DD6748DEDEBBED3F4155C55;
+			remoteGlobalIDString = FAFD27713AE6DFDD665927950DA55653;
 			remoteInfo = "PencilCup-PencilCup";
 		};
 		D92DD721E8BA2D74BA6AF5BB0BB0E48B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8833D92FF9DA644D01F528C684D362D5;
+			remoteGlobalIDString = 80FC1A80DA043A8F9F71F59C949414A3;
 			remoteInfo = PencilCup;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		02F3BCC2CC4CD4CED1F0F063B4781D2D /* Types.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		0580060B49F101B6D2EA9B8A526F8246 /* Pods-PencilCup_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PencilCup_Example.modulemap"; sourceTree = "<group>"; };
 		0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PencilCup_Tests-dummy.m"; sourceTree = "<group>"; };
 		24BE283725671962C7AB2230B0FA2218 /* Pods_PencilCup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 		78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PencilCup.xcconfig; sourceTree = "<group>"; };
 		7BE626D52E1F2A8639FFC06C9A125401 /* Pods-PencilCup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PencilCup-dummy.m"; sourceTree = "<group>"; };
+		A15B565F90509209C3AE4FC7759E5410 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B058A7A10097688AB16B8BF4F004C34E /* Pods-PencilCup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CD2827353609B008DE8AC92A88561A /* Pods-PencilCup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PencilCup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B322A02C2742CF1DAE83B4416433ADA3 /* Pods-PencilCup_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -71,7 +74,6 @@
 		B721C3611465C7EA5545E1A360A47B39 /* Pods-PencilCup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PencilCup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BB3473D55A54A77E4AF059AA9D8A8FBD /* PencilCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PencilCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1005C25E1B5CDB356B22735B1740DFF /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		CB433770A9F39614B20F56FA3F5D2088 /* Pods-PencilCup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PencilCup_Example-umbrella.h"; sourceTree = "<group>"; };
 		D1C6128FBD3521A00005950E6D2D90FE /* Pods-PencilCup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PencilCup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D4E1165838FDECF03B2D926CF3367524 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -81,18 +83,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1796B504D896FC3501E72EB87851F4B4 /* Frameworks */ = {
+		5B27808A7E8947926284557A9207250E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7CC80ED7D7B1B852A0AE486EA13AF37E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B83DD5C672337F22F4707284EE35A8D4 /* Foundation.framework in Frameworks */,
+				1F81428BA35FBC5A16184800DB0EA9B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +104,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B35AEDA433901338C04DC9E899A1A052 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB3D77BFFF0D5E2EFB30F9D2F7ED4A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +133,15 @@
 			);
 			name = "Pods-PencilCup_Tests";
 			path = "Target Support Files/Pods-PencilCup_Tests";
+			sourceTree = "<group>";
+		};
+		34E3D943AE5C2F143B6ACF642F4CBCD7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A15B565F90509209C3AE4FC7759E5410 /* Operators.swift */,
+				02F3BCC2CC4CD4CED1F0F063B4781D2D /* Types.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		428F844A76BE689C7055F3D198056BAC /* Development Pods */ = {
@@ -159,14 +170,6 @@
 			path = "Target Support Files/Pods-PencilCup_Example";
 			sourceTree = "<group>";
 		};
-		5BE69029BE34C353DBD3DB0041DC785B /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				C1005C25E1B5CDB356B22735B1740DFF /* ReplaceMe.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -178,18 +181,10 @@
 			);
 			sourceTree = "<group>";
 		};
-		8D9D8310FBDE2D631E8CE294538FFDFC /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				5BE69029BE34C353DBD3DB0041DC785B /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 		ABBB1B7C9E99DF3F824EF20F9C3FF6CB /* PencilCup */ = {
 			isa = PBXGroup;
 			children = (
-				8D9D8310FBDE2D631E8CE294538FFDFC /* Pod */,
+				ECFB7127CD9E299471D48B293CDAA31A /* Pod */,
 				D01451B4E9929942612C748BE1E4F781 /* Support Files */,
 			);
 			name = PencilCup;
@@ -246,6 +241,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		ECFB7127CD9E299471D48B293CDAA31A /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				34E3D943AE5C2F143B6ACF642F4CBCD7 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -265,11 +268,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9CD835CE2E2B33ADE01B6C30ECE181C /* Headers */ = {
+		CB9B1B60B6A4F1601B8607312B4B6265 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2EE6D5881DCB8429B84A468BFB0C0446 /* PencilCup-umbrella.h in Headers */,
+				1BC7BB3EE63777E4BA7423DA422E7B8F /* PencilCup-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,36 +297,19 @@
 			productReference = 2869D1CE5A0606D63480F05814F7CA93 /* Pods_PencilCup_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		6E62E67B5DD6748DEDEBBED3F4155C55 /* PencilCup-PencilCup */ = {
+		80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EECE9E48FAB72AFF0666548C5BB504B7 /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */;
+			buildConfigurationList = E363787ADD0BD0B76D1012AFB2F44B6E /* Build configuration list for PBXNativeTarget "PencilCup" */;
 			buildPhases = (
-				9D9BEBB20F603F6B41C097415E8B4A28 /* Sources */,
-				1796B504D896FC3501E72EB87851F4B4 /* Frameworks */,
-				2CDF3989136479DBB2FAB50CC739F4E2 /* Resources */,
+				2CD3348C6A71B1220B753DE81461F70F /* Sources */,
+				5B27808A7E8947926284557A9207250E /* Frameworks */,
+				2BAD3FD2855FD3818AC164242C463CFA /* Resources */,
+				CB9B1B60B6A4F1601B8607312B4B6265 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-			);
-			name = "PencilCup-PencilCup";
-			productName = "PencilCup-PencilCup";
-			productReference = 2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		8833D92FF9DA644D01F528C684D362D5 /* PencilCup */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 777C0298F11A0ADC6E7550B5DD524124 /* Build configuration list for PBXNativeTarget "PencilCup" */;
-			buildPhases = (
-				9973AB323D00AB85C7E9387E3A1DD356 /* Sources */,
-				7CC80ED7D7B1B852A0AE486EA13AF37E /* Frameworks */,
-				1415A17F4A96F0AE55044F5C173DB4BC /* Resources */,
-				E9CD835CE2E2B33ADE01B6C30ECE181C /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				39693C235C4112F8A9E163322F9D61EF /* PBXTargetDependency */,
+				A055F35A4909F1F3510995476EB8EF17 /* PBXTargetDependency */,
 			);
 			name = PencilCup;
 			productName = PencilCup;
@@ -348,6 +334,23 @@
 			productReference = 24BE283725671962C7AB2230B0FA2218 /* Pods_PencilCup_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		FAFD27713AE6DFDD665927950DA55653 /* PencilCup-PencilCup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20E98C00F508592AA0C0D95ECA72EACE /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */;
+			buildPhases = (
+				B16182D81D40763EF49F7C826BF30386 /* Sources */,
+				FFB3D77BFFF0D5E2EFB30F9D2F7ED4A1 /* Frameworks */,
+				06DB1CD5A39A51C53DEAB125086B2243 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PencilCup-PencilCup";
+			productName = "PencilCup-PencilCup";
+			productReference = 2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -355,7 +358,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0720;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -369,8 +372,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8833D92FF9DA644D01F528C684D362D5 /* PencilCup */,
-				6E62E67B5DD6748DEDEBBED3F4155C55 /* PencilCup-PencilCup */,
+				80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */,
+				FAFD27713AE6DFDD665927950DA55653 /* PencilCup-PencilCup */,
 				F52B5E69070A2516ED8ECEC23C109664 /* Pods-PencilCup_Example */,
 				1D844E2F1CFB977773C4A502F3D459EF /* Pods-PencilCup_Tests */,
 			);
@@ -378,37 +381,31 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1415A17F4A96F0AE55044F5C173DB4BC /* Resources */ = {
+		06DB1CD5A39A51C53DEAB125086B2243 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D015843E124026BCD2F50704FB9BED /* PencilCup.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2CDF3989136479DBB2FAB50CC739F4E2 /* Resources */ = {
+		2BAD3FD2855FD3818AC164242C463CFA /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C96886AAA9CE4C455AEA562D557360D /* PencilCup.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9973AB323D00AB85C7E9387E3A1DD356 /* Sources */ = {
+		2CD3348C6A71B1220B753DE81461F70F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8AAAA4D5D95D8CD65847251B33D3692C /* PencilCup-dummy.m in Sources */,
-				B0984DD3012A71D8239185902E4E719F /* ReplaceMe.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9D9BEBB20F603F6B41C097415E8B4A28 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				204A8910CB36A1B8DD6E2CDB38FD9F99 /* Operators.swift in Sources */,
+				B22B8FB59522FA5A332D788C88991D02 /* PencilCup-dummy.m in Sources */,
+				8A3B74E450F8A0A02B28A462F2208A61 /* Types.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +414,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4458097FA2A8158B99A274DE27CB407 /* Pods-PencilCup_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16182D81D40763EF49F7C826BF30386 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,22 +435,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		39693C235C4112F8A9E163322F9D61EF /* PBXTargetDependency */ = {
+		A055F35A4909F1F3510995476EB8EF17 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PencilCup-PencilCup";
-			target = 6E62E67B5DD6748DEDEBBED3F4155C55 /* PencilCup-PencilCup */;
-			targetProxy = 8696BCDB28DEAC0C367E5CB743D2866C /* PBXContainerItemProxy */;
+			target = FAFD27713AE6DFDD665927950DA55653 /* PencilCup-PencilCup */;
+			targetProxy = 6ECF863AE9B61C30631BE9FC7C1DD51D /* PBXContainerItemProxy */;
 		};
 		CBC3C92BAFC220169B53526A8CC11773 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PencilCup;
-			target = 8833D92FF9DA644D01F528C684D362D5 /* PencilCup */;
+			target = 80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */;
 			targetProxy = 6BF646FD8DEBC7C3B9FA2C52E9ADD0E7 /* PBXContainerItemProxy */;
 		};
 		F3D7E114D49E2D021B480C562B3FB041 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PencilCup;
-			target = 8833D92FF9DA644D01F528C684D362D5 /* PencilCup */;
+			target = 80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */;
 			targetProxy = D92DD721E8BA2D74BA6AF5BB0BB0E48B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,6 +508,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -525,31 +530,7 @@
 			};
 			name = Debug;
 		};
-		5E5D84BB2BAFFA9390E1724CBB232095 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PencilCup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		6A8BE87CF554903F1E845F3122C30F4F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PencilCup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		89FCD162C80FDE473029C2333ABF9BE4 /* Release */ = {
+		588E31174472D367C8D731C77813F63A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
 			buildSettings = {
@@ -566,13 +547,27 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PencilCup/PencilCup.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PencilCup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CF8D437D7738AD0D225120D7F3B6D51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PencilCup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -597,6 +592,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PencilCup_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -628,6 +624,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PencilCup_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -638,7 +635,7 @@
 			};
 			name = Debug;
 		};
-		B57B99C5BBDBDEBB547A966D4E83690F /* Debug */ = {
+		C55F12C15619D59C37BFEFD3840D987D /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
 			buildSettings = {
@@ -655,14 +652,26 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/PencilCup/PencilCup.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = PencilCup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EE18F3BD7FAB56265C7857E493FE0047 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PencilCup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
@@ -687,6 +696,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PencilCup_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -717,6 +727,7 @@
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = Pods_PencilCup_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -738,6 +749,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		20E98C00F508592AA0C0D95ECA72EACE /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE18F3BD7FAB56265C7857E493FE0047 /* Debug */,
+				5CF8D437D7738AD0D225120D7F3B6D51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -747,11 +767,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		777C0298F11A0ADC6E7550B5DD524124 /* Build configuration list for PBXNativeTarget "PencilCup" */ = {
+		E363787ADD0BD0B76D1012AFB2F44B6E /* Build configuration list for PBXNativeTarget "PencilCup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57B99C5BBDBDEBB547A966D4E83690F /* Debug */,
-				89FCD162C80FDE473029C2333ABF9BE4 /* Release */,
+				588E31174472D367C8D731C77813F63A /* Debug */,
+				C55F12C15619D59C37BFEFD3840D987D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -761,15 +781,6 @@
 			buildConfigurations = (
 				B0DF5FC79637B85FD1D0BE5EA631D966 /* Debug */,
 				F4D57A5DFC398DFF3B3E7C9D095F67F8 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		EECE9E48FAB72AFF0666548C5BB504B7 /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6A8BE87CF554903F1E845F3122C30F4F /* Debug */,
-				5E5D84BB2BAFFA9390E1724CBB232095 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
