@@ -8,13 +8,15 @@
 
 import UIKit
 
+import PencilCup
+
 @IBDesignable class PencilCupView: UIView {
 
     override func drawRect(rect: CGRect) {
         
         let (bgColor,cupColor) = (UIColor(white: 0.9, alpha: 1), UIColor(white: 0.2, alpha: 1))
 
-        let context = UIGraphicsGetCurrentContext()?.color(bgColor)?.rect(rect)?.fill()
+        let context = PCGraphicsGetCurrentContext()?.round()?.color(bgColor)?.rect(rect)?.fill()
         context?.color(cupColor)?.round()?.line(1)?.offset((rect.width - 188) / 2, (rect.height - 300) / 2)
 
         context ->- (126.01,89.44) -~- (116.37,89.19,105.65,89.06,94.35,89.06) -~- (52.35,89.06,18.3,90.8,18.3,94.24)

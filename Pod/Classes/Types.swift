@@ -8,29 +8,29 @@
 
 import UIKit
 
-typealias PCPoint = (x: CGFloat, y: CGFloat)
-typealias PCSize = (width: CGFloat, height: CGFloat)
-typealias PCScale = (x: CGFloat, y: CGFloat)
-typealias PCDelta = (dx: CGFloat, dy: CGFloat)
+public typealias PCPoint = (x: CGFloat, y: CGFloat)
+public typealias PCSize = (width: CGFloat, height: CGFloat)
+public typealias PCScale = (x: CGFloat, y: CGFloat)
+public typealias PCDelta = (dx: CGFloat, dy: CGFloat)
 
 // MARK: - CGRect
 
-extension CGRect {
+public extension CGRect {
     
     func inset(d: CGFloat) -> CGRect { return CGRectInset(self, d, d) }
     func inset(dx: CGFloat, _ dy: CGFloat) -> CGRect { return CGRectInset(self, dx, dy) }
     
 }
 
-func CGRect(x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect { return CGRectMake(x, y, width, height) }
-func CGRect(origin: CGPoint, _ width: CGFloat, _ height: CGFloat) -> CGRect { return CGRect(origin.x, origin.y, width, height) }
-func CGRect(origin: PCPoint, _ width: CGFloat, _ height: CGFloat) -> CGRect { return CGRect(origin.x, origin.y, width, height) }
-func CGRect(origin: PCPoint, _ size: PCSize) -> CGRect { return CGRect(origin.x, origin.y, size.width, size.height) }
-func CGRect(origin: CGPoint, _ size: PCSize) -> CGRect { return CGRect(origin.x, origin.y, size.width, size.height) }
+public func CGRect(x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect { return CGRectMake(x, y, width, height) }
+public func CGRect(origin: CGPoint, _ width: CGFloat, _ height: CGFloat) -> CGRect { return CGRect(origin.x, origin.y, width, height) }
+public func CGRect(origin: PCPoint, _ width: CGFloat, _ height: CGFloat) -> CGRect { return CGRect(origin.x, origin.y, width, height) }
+public func CGRect(origin: PCPoint, _ size: PCSize) -> CGRect { return CGRect(origin.x, origin.y, size.width, size.height) }
+public func CGRect(origin: CGPoint, _ size: PCSize) -> CGRect { return CGRect(origin.x, origin.y, size.width, size.height) }
 
 // MARK: - CGContext
 
-extension CGContextRef {
+public extension CGContextRef {
     
     func round() -> CGContextRef? { CGContextSetLineCap(self, .Round); CGContextSetLineJoin(self, .Round); return self }
     func clear(rect: CGRect? = nil) -> CGContextRef? { CGContextClearRect(self, rect ?? UIScreen.mainScreen().bounds) ;return self }
@@ -56,4 +56,4 @@ extension CGContextRef {
     
 }
 
-func UIGraphicsGetCurrentContext() -> CGContextRef? { return UIKit.UIGraphicsGetCurrentContext()?.round() }
+public func PCGraphicsGetCurrentContext() -> CGContextRef? { return UIKit.UIGraphicsGetCurrentContext() }

@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  PencilCup: 528440489f80bf810ed7fdddc372cf5bf9b5317d
+  PencilCup: eeff3deb6689f655c7c78d741e7bdf989ee893e3
 
 COCOAPODS: 0.39.0
