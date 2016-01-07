@@ -6,6 +6,8 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
+import Foundation
+
 public extension CGContextRef {
     
     func round() -> CGContextRef? {
@@ -16,13 +18,7 @@ public extension CGContextRef {
     
     func clear(rect: CGRect? = nil) -> CGContextRef? {
         
-        CGContextClearRect(self, rect ?? UIScreen.mainScreen().bounds) ;return self
-    
-    }
-    
-    func color(color: UIColor) -> CGContextRef? {
-        
-        color.set(); return self
+        CGContextClearRect(self, rect ?? CGRect(0, 0, 2048, 2048)) ;return self
     
     }
     
@@ -36,6 +32,14 @@ public extension CGContextRef {
         
         CGContextFillPath(self); return self
     
+    }
+    
+    func color(color: CGColorRef?) -> CGContextRef? {
+        
+        CGContextSetStrokeColorWithColor(self, color)
+        CGContextSetFillColorWithColor(self, color)
+        return self
+        
     }
     
     func line(width: CGFloat) -> CGContextRef? {

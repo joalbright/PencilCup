@@ -6,6 +6,8 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
+import Foundation
+
 public extension CGRect {
     
     /// Inset all four sides with d

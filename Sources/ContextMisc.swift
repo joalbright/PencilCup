@@ -6,6 +6,8 @@
 //  Copyright © 2015 Jo Albright. All rights reserved.
 //
 
+import Foundation
+
 public typealias TPoint = (x: CGFloat, y: CGFloat)
 public typealias TSize = (width: CGFloat, height: CGFloat)
 public typealias TScale = (x: CGFloat, y: CGFloat)

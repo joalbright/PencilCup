@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PencilCup"
-  s.version          = "0.2.0"
+  s.version          = "0.2.1"
   s.summary          = "Tools built to help use CoreGraphics more Swiftly"
 
 # This description is used to generate tags and improve search results.
@@ -32,7 +32,7 @@ Core Graphics is an amazingly useful library that I work with in every app I bui
   s.platform     = :ios, '9.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+  s.source_files = 'Sources/*'
   s.resource_bundles = {
     'PencilCup' => ['Pod/Assets/*.png']
   }

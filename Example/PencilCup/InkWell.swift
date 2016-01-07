@@ -6,6 +6,9 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
+import UIKit
+import PencilCup
+
 @IBDesignable class ColorBar: UIControl {
 
     @IBInspectable var steps: CGFloat = 360
@@ -121,13 +124,13 @@
         let handleWH = rect.width < rect.height ? rect.width : rect.height
         let handleRect = CGRect(x, y, handleWH, handleWH).inset(3)
         
-        context?.ellipse(handleRect)?.stroke()?.blend(.Normal)?.color(handleColor)?.line(1)
+        context?.ellipse(handleRect)?.stroke()?.blend(.Normal)?.color(handleColor.CGColor)?.line(1)
         
         if percent == 0 && type == .Alpha {
             
             let (l1,l2) = (handleRect.pointOnCircleInRect(-45),handleRect.pointOnCircleInRect(-225))
             
-            context?.line(2)?.color(UIColor.redColor()) ->- l1 -+- l2
+            context?.line(2)?.color(UIColor.redColor().CGColor) ->- l1 -+- l2
             
         }
         

@@ -14,7 +14,7 @@ import PencilCup
 
     override func drawRect(rect: CGRect) {
         
-        let (bgColor,cupColor) = (UIColor(white: 0.9, alpha: 1), UIColor(white: 0.2, alpha: 1))
+        let (bgColor,cupColor) = (UIColor(white: 0.9, alpha: 1).CGColor, UIColor(white: 0.2, alpha: 1).CGColor)
 
         let context = UIGraphicsGetCurrentContext()?.round()?.color(bgColor)?.rect(rect)?.fill()
         context?.color(cupColor)?.round()?.line(1)?.offset((rect.width - 188) / 2, (rect.height - 300) / 2)

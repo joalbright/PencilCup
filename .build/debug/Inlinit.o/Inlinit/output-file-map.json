@@ -1,0 +1,11 @@
+{
+  "": {
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/Inlinit.o/Inlinit/master.swiftdeps"
+  },
+  "/Users/RedLeader/_github/PencilCup/Packages/Inlinit-0.1.1/Sources/Inlinit.swift": {
+    "dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/Inlinit.o/Inlinit/Inlinit.d",
+    "object": "/Users/RedLeader/_github/PencilCup/.build/debug/Inlinit.o/Sources/Inlinit.swift.o",
+    "swiftmodule": "/Users/RedLeader/_github/PencilCup/.build/debug/Inlinit.o/Inlinit/Inlinit~partial.swiftmodule",
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/Inlinit.o/Inlinit/Inlinit.swiftdeps"
+  }
+}

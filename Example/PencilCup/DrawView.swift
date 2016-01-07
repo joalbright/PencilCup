@@ -9,7 +9,15 @@
 import UIKit
 import PencilCup
 
-class DrawView: Canvas {
+class DrawView: UIView, Drawable {
+    
+    var lines: [CGLine] = []
+    
+    override func drawRect(rect: CGRect) {
+        
+        drawLines(UIGraphicsGetCurrentContext(), lines: lines)
+        
+    }
 
     override func layoutSubviews() {
         
@@ -78,8 +86,8 @@ class DrawView: Canvas {
         
         lines.append(CGLine {
             
-            $0.stroke = UIColor.cyanColor()
-            $0.fill = UIColor.magentaColor()
+            $0.stroke = UIColor.cyanColor().CGColor
+            $0.fill = UIColor.magentaColor().CGColor
             $0.strokeWidth = 10
             $0.points.append(touch.locationInView(self))
             

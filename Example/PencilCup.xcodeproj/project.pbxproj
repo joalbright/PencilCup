@@ -15,6 +15,8 @@
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8E36529F0E595C8C368F9684 /* Pods_PencilCup_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96899823E9AFD7D4F4188585 /* Pods_PencilCup_Tests.framework */; };
 		A939C7151C3E007F001EC587 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939C7141C3E007F001EC587 /* DrawView.swift */; };
+		A945D6711C3F0B92006CDF25 /* InkWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945D6701C3F0B92006CDF25 /* InkWell.swift */; };
+		A945D6731C3F0BAF006CDF25 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945D6721C3F0BAF006CDF25 /* Drawable.swift */; };
 		A9B091581C3CCC48004E26D0 /* PencilCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B091561C3CCC48004E26D0 /* PencilCupView.swift */; };
 		A9B091591C3CCC48004E26D0 /* CoreGraphicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */; };
 /* End PBXBuildFile section */
@@ -48,6 +50,9 @@
 		96899823E9AFD7D4F4188585 /* Pods_PencilCup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		984567C7765F410F76D66991 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		A939C7141C3E007F001EC587 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		A945D6701C3F0B92006CDF25 /* InkWell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InkWell.swift; path = /Users/RedLeader/_github/PencilCup/Example/PencilCup/InkWell.swift; sourceTree = "<absolute>"; };
+		A945D6721C3F0BAF006CDF25 /* Drawable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drawable.swift; path = /Users/RedLeader/_github/PencilCup/Example/PencilCup/Drawable.swift; sourceTree = "<absolute>"; };
+		A9A896071C3EFEE000E97FE7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		A9B091561C3CCC48004E26D0 /* PencilCupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilCupView.swift; sourceTree = "<group>"; };
 		A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsView.swift; sourceTree = "<group>"; };
 		CB4629C04FC75E837C9E41AD /* Pods_PencilCup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +90,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				A9A896041C3EFE0100E97FE7 /* Package Manager */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for PencilCup */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -110,6 +116,8 @@
 				A9B091561C3CCC48004E26D0 /* PencilCupView.swift */,
 				A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */,
 				A939C7141C3E007F001EC587 /* DrawView.swift */,
+				A945D6701C3F0B92006CDF25 /* InkWell.swift */,
+				A945D6721C3F0BAF006CDF25 /* Drawable.swift */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for PencilCup";
@@ -163,6 +171,14 @@
 				16C06420DF5BE75A290010A0 /* Pods-PencilCup_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A9A896041C3EFE0100E97FE7 /* Package Manager */ = {
+			isa = PBXGroup;
+			children = (
+				A9A896071C3EFEE000E97FE7 /* Package.swift */,
+			);
+			name = "Package Manager";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -368,7 +384,9 @@
 				A9B091581C3CCC48004E26D0 /* PencilCupView.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A939C7151C3E007F001EC587 /* DrawView.swift in Sources */,
+				A945D6731C3F0BAF006CDF25 /* Drawable.swift in Sources */,
 				A9B091591C3CCC48004E26D0 /* CoreGraphicsView.swift in Sources */,
+				A945D6711C3F0B92006CDF25 /* InkWell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

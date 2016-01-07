@@ -1,0 +1,29 @@
+client:
+  name: swift-build
+
+tools: {}
+
+targets:
+  "": [<PencilCup>]
+  PencilCup: [<PencilCup>]
+
+commands:
+  <PencilCup-swiftc>:
+    tool: swift-compiler
+    executable: "/Library/Developer/Toolchains/swift-2.2-SNAPSHOT-2016-01-06-a.xctoolchain/usr/bin/swiftc"
+    inputs: ["/Users/RedLeader/_github/PencilCup/Sources/ContextMisc.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextPath.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextPoint.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextRect.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextRef.swift"]
+    outputs: ["<PencilCup-swiftc>","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.swiftmodule","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextMisc.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPath.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPoint.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRect.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRef.swift.o"]
+    module-name: "PencilCup"
+    module-output-path: "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.swiftmodule"
+    is-library: true
+    sources: ["/Users/RedLeader/_github/PencilCup/Sources/ContextMisc.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextPath.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextPoint.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextRect.swift","/Users/RedLeader/_github/PencilCup/Sources/ContextRef.swift"]
+    objects: ["/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextMisc.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPath.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPoint.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRect.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRef.swift.o"]
+    import-paths: ["/Users/RedLeader/_github/PencilCup/.build/debug"]
+    temps-path: "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup"
+    other-args: ["-j8","-Onone","-g","-target","x86_64-apple-macosx10.10","-enable-testing","-sdk","/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk","-I","/usr/local/include"]
+  <PencilCup>:
+    tool: shell
+    inputs: ["<PencilCup-swiftc>","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextMisc.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPath.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPoint.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRect.swift.o","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRef.swift.o"]
+    outputs: ["<PencilCup>","/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.a"]
+    args: ["/bin/sh","-c","rm -f '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.a'; ar cr '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.a' '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextMisc.swift.o' '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPath.swift.o' '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPoint.swift.o' '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRect.swift.o' '/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRef.swift.o'"]
+    description: "Linking Library:  .build/debug/PencilCup.a"

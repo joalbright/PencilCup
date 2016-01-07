@@ -6,17 +6,18 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
-public protocol Drawable {
+import UIKit
+import PencilCup
 
-    func drawLines(lines: [CGLine])
+public protocol Drawable {
     
 }
 
-extension UIView: Drawable {
+extension Drawable {
     
-    public func drawLines(lines: [CGLine]) {
+    public func drawLines(context: CGContextRef?, lines: [CGLine]) {
         
-        let context = UIGraphicsGetCurrentContext()?.round()
+        context?.round()
         
         for line in lines {
             

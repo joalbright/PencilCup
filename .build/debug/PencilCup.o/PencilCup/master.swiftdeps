@@ -1,0 +1,9 @@
+version: "Apple Swift version 2.2-dev (LLVM 3ebdbb2c7e, Clang f66c5bb67b, Swift 54dcd16759)"
+options: "26f28867cad0c6b5605e9882c5d5ad3d"
+build_time: [505516721, 970489000]
+inputs:
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextMisc.swift": [505515582, 0]
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextPath.swift": [505515587, 0]
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextPoint.swift": [505516486, 0]
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextRect.swift": [505515594, 0]
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextRef.swift": [505516712, 0]

@@ -9,13 +9,11 @@
 /* Begin PBXBuildFile section */
 		015697A562C71FE6EECD61F2822EB1E3 /* Inlinit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C66E21267B3BEE248570424ED85641 /* Inlinit-dummy.m */; };
 		0C45A6575D848186B3F7993BCFAC3861 /* PencilCup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1193869755D0F9E38C30406A4D68977F /* DrawableInkWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853918CCE030FBD60D57FF164A0F19B5 /* DrawableInkWell.swift */; };
 		24278733794392475AD2B71D66943F83 /* ContextRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */; };
 		2EAFE828F72CB434B41216F090FD0976 /* Pods-PencilCup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */; };
 		3639848D15AC9A231A4CE88BC64FCA24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
 		3F5354D8D8895CBFC20EEA12F8835CAB /* Inlinit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0FBDDAE34FC475045C0912D172929 /* Inlinit.bundle */; };
 		50203BA5C52E50D5C5F0DE4C2BF74153 /* Pods-PencilCup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B516F6E82FA8AAB8D52F0AA7C4280C /* Pods-PencilCup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63715CC128044BC3C12ED8B912AF0EC1 /* DrawableCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7C474CD1CE7F2C6CF26F40810CE6E /* DrawableCanvas.swift */; };
 		6C8289307439752D262CF6D9D7C86B14 /* PencilCup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */; };
 		6E4A8BAD456A7EB8893FB4B4C100F34D /* ContextPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */; };
 		8C61570020C8E87F64009B443ADF1FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
@@ -23,7 +21,6 @@
 		9F3DD34786B85A409827C33ABE1DA402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
 		A393263508A6E6F7E44BB2353CC4FC5D /* ContextMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */; };
 		A939C7131C3DF93F001EC587 /* ContextPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939C7111C3DF857001EC587 /* ContextPoint.swift */; };
-		A939C7161C3E00CD001EC587 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA62A18F965BA85C50EF31A397D6865 /* Drawable.swift */; };
 		AC38D25C1725FFF2D8A1D7FEA39F2F17 /* Inlinit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B40636FB6336192DE9ED7A8586F7264 /* Inlinit.framework */; };
 		C08D9BAFE9D9C47006DA7CBDED315C23 /* Inlinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CABBECBE593B22FEF92E6145CD33E4 /* Inlinit.swift */; };
 		D152BCC00DDC29E45126F8318D9BA1A1 /* Pods-PencilCup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB433770A9F39614B20F56FA3F5D2088 /* Pods-PencilCup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -88,7 +85,6 @@
 /* Begin PBXFileReference section */
 		0580060B49F101B6D2EA9B8A526F8246 /* Pods-PencilCup_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PencilCup_Example.modulemap"; sourceTree = "<group>"; };
 		0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PencilCup_Tests-dummy.m"; sourceTree = "<group>"; };
-		1CA62A18F965BA85C50EF31A397D6865 /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
 		2756FDCF530CADCCCE5382553593843D /* Pods-PencilCup_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Tests-resources.sh"; sourceTree = "<group>"; };
 		2B97652A6BD63CE0E0307E58C05D7C2C /* Pods-PencilCup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		34B738DDDD850D729EFF7DD2ABEE7E45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,24 +95,22 @@
 		4B40636FB6336192DE9ED7A8586F7264 /* Inlinit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inlinit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		549F20D9A4B525D0DCA930B9BD609093 /* Pods-PencilCup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PencilCup_Tests.modulemap"; sourceTree = "<group>"; };
 		56DC7DFC17A65685FBC9376E8C51A40A /* PencilCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PencilCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5DD7C474CD1CE7F2C6CF26F40810CE6E /* DrawableCanvas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DrawableCanvas.swift; sourceTree = "<group>"; };
-		65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextRect.swift; sourceTree = "<group>"; };
+		65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextRect.swift; path = ../Sources/ContextRect.swift; sourceTree = "<group>"; };
 		67821304CC0969A494E79E7B7C815D6D /* PencilCup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PencilCup-prefix.pch"; sourceTree = "<group>"; };
 		70AE2EE5FF3EA8616976084E95DCBE90 /* PencilCup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PencilCup.modulemap; sourceTree = "<group>"; };
 		71FC9E05412B644F9A334F12014B6A94 /* Inlinit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Inlinit.modulemap; sourceTree = "<group>"; };
 		7326354E9BC0FB0DB86433D8AF3870D2 /* Pods-PencilCup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Example.release.xcconfig"; sourceTree = "<group>"; };
-		74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextMisc.swift; sourceTree = "<group>"; };
+		74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextMisc.swift; path = ../Sources/ContextMisc.swift; sourceTree = "<group>"; };
 		783D25D621093CE2D709997B845E8F23 /* Pods-PencilCup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PencilCup_Example-dummy.m"; sourceTree = "<group>"; };
 		78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PencilCup.xcconfig; sourceTree = "<group>"; };
 		7BE626D52E1F2A8639FFC06C9A125401 /* Pods-PencilCup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextPath.swift; sourceTree = "<group>"; };
-		853918CCE030FBD60D57FF164A0F19B5 /* DrawableInkWell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DrawableInkWell.swift; sourceTree = "<group>"; };
+		8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextPath.swift; path = ../Sources/ContextPath.swift; sourceTree = "<group>"; };
 		87C09811882679082E3FC1B8BDF2361C /* Inlinit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Inlinit-umbrella.h"; sourceTree = "<group>"; };
 		87C66E21267B3BEE248570424ED85641 /* Inlinit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Inlinit-dummy.m"; sourceTree = "<group>"; };
 		88C47A896BF991FBA16673898D698749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PencilCup-dummy.m"; sourceTree = "<group>"; };
 		966E22A8BA3975920574BFAC87327769 /* Pods_PencilCup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A939C7111C3DF857001EC587 /* ContextPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextPoint.swift; sourceTree = "<group>"; };
+		A939C7111C3DF857001EC587 /* ContextPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ContextPoint.swift; path = ../Sources/ContextPoint.swift; sourceTree = "<group>"; };
 		B058A7A10097688AB16B8BF4F004C34E /* Pods-PencilCup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CD2827353609B008DE8AC92A88561A /* Pods-PencilCup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PencilCup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B322A02C2742CF1DAE83B4416433ADA3 /* Pods-PencilCup_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Tests-frameworks.sh"; sourceTree = "<group>"; };
@@ -133,7 +127,7 @@
 		EA9855E953149A5633FF73CDB02B7269 /* Pods_PencilCup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1CABBECBE593B22FEF92E6145CD33E4 /* Inlinit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Inlinit.swift; path = Pod/Classes/Inlinit.swift; sourceTree = "<group>"; };
 		FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PencilCup-umbrella.h"; sourceTree = "<group>"; };
-		FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextRef.swift; sourceTree = "<group>"; };
+		FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContextRef.swift; path = ../Sources/ContextRef.swift; sourceTree = "<group>"; };
 		FE035B7B52CD23560C78E9B83E27511E /* Pods-PencilCup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FE1938A52A6C95D6067960CF6AD80FCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -240,7 +234,11 @@
 		2E1E1C7B878962DA60FD82B32F434129 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				7651FE21D94569121B709DF09BE2DAF4 /* Classes */,
+				74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */,
+				8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */,
+				A939C7111C3DF857001EC587 /* ContextPoint.swift */,
+				65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */,
+				FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
@@ -269,21 +267,6 @@
 			);
 			name = "Pods-PencilCup_Example";
 			path = "Target Support Files/Pods-PencilCup_Example";
-			sourceTree = "<group>";
-		};
-		7651FE21D94569121B709DF09BE2DAF4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				1CA62A18F965BA85C50EF31A397D6865 /* Drawable.swift */,
-				5DD7C474CD1CE7F2C6CF26F40810CE6E /* DrawableCanvas.swift */,
-				853918CCE030FBD60D57FF164A0F19B5 /* DrawableInkWell.swift */,
-				74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */,
-				8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */,
-				A939C7111C3DF857001EC587 /* ContextPoint.swift */,
-				65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */,
-				FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -595,13 +578,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63715CC128044BC3C12ED8B912AF0EC1 /* DrawableCanvas.swift in Sources */,
 				24278733794392475AD2B71D66943F83 /* ContextRef.swift in Sources */,
 				A939C7131C3DF93F001EC587 /* ContextPoint.swift in Sources */,
-				1193869755D0F9E38C30406A4D68977F /* DrawableInkWell.swift in Sources */,
 				A393263508A6E6F7E44BB2353CC4FC5D /* ContextMisc.swift in Sources */,
 				6E4A8BAD456A7EB8893FB4B4C100F34D /* ContextPath.swift in Sources */,
-				A939C7161C3E00CD001EC587 /* Drawable.swift in Sources */,
 				6C8289307439752D262CF6D9D7C86B14 /* PencilCup-dummy.m in Sources */,
 				8E669EF60A3E483A096347746C2B2F5A /* ContextRect.swift in Sources */,
 			);

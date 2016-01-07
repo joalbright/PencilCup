@@ -6,6 +6,8 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
+import Foundation
+
 /// Move To Point Operator
 infix operator ->- { associativity left precedence 200 }
 

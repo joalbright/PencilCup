@@ -6,6 +6,7 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
+import Foundation
 import Inlinit
 
 extension CGPoint: Inlinit {
@@ -23,12 +24,12 @@ public struct CGLine: Inlinit {
     public var points: [CGPoint] = []
     public var strokeWidth: CGFloat = 0
     
-    public var fill: UIColor = UIColor.whiteColor()
-    public var stroke: UIColor = UIColor.blackColor()
+    public var fill: CGColorRef?
+    public var stroke: CGColorRef?
     
     public init() { }
     
-    func drawPoints(context: CGContextRef?) -> CGContextRef? {
+    public func drawPoints(context: CGContextRef?) -> CGContextRef? {
         
         for (p,point) in points.enumerate() {
             

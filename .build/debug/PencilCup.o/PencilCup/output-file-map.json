@@ -1,0 +1,35 @@
+{
+  "": {
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/master.swiftdeps"
+  },
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextMisc.swift": {
+    "dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextMisc.d",
+    "object": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextMisc.swift.o",
+    "swiftmodule": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextMisc~partial.swiftmodule",
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextMisc.swiftdeps"
+  },
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextPath.swift": {
+    "dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextPath.d",
+    "object": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPath.swift.o",
+    "swiftmodule": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextPath~partial.swiftmodule",
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextPath.swiftdeps"
+  },
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextPoint.swift": {
+    "dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextPoint.d",
+    "object": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextPoint.swift.o",
+    "swiftmodule": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextPoint~partial.swiftmodule",
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextPoint.swiftdeps"
+  },
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextRect.swift": {
+    "dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextRect.d",
+    "object": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRect.swift.o",
+    "swiftmodule": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextRect~partial.swiftmodule",
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextRect.swiftdeps"
+  },
+  "/Users/RedLeader/_github/PencilCup/Sources/ContextRef.swift": {
+    "dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextRef.d",
+    "object": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/Sources/ContextRef.swift.o",
+    "swiftmodule": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextRef~partial.swiftmodule",
+    "swift-dependencies": "/Users/RedLeader/_github/PencilCup/.build/debug/PencilCup.o/PencilCup/ContextRef.swiftdeps"
+  }
+}
