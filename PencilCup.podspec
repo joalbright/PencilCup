@@ -39,5 +39,5 @@ Core Graphics is an amazingly useful library that I work with in every app I bui
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Inlinit', '~> 0.1'
 end

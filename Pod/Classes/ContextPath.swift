@@ -1,20 +1,17 @@
 //
-//  Path.swift
-//  Pods
+//  ContextPath.swift
+//  PencilCup
 //
-//  Created by Jo Albright on 1/6/16.
+//  Created by Jo Albright on 1/4/16.
+//  Copyright © 2016 Jo Albright. All rights reserved.
 //
-//
-
-import Foundation
-
 
 /// Move To Point Operator
 infix operator ->- { associativity left precedence 200 }
 
 
 /// CGContext Move To Point
-public func ->- (lhs: CGContextRef?, rhs: PCPoint) -> CGContextRef? {
+public func ->- (lhs: CGContextRef?, rhs: TPoint) -> CGContextRef? {
     
     CGContextMoveToPoint(lhs, rhs.x, rhs.y); return lhs
     
@@ -33,7 +30,7 @@ infix operator -+- { associativity left precedence 200 }
 
 
 /// CGContext Add Line To Point
-public func -+- (lhs: CGContextRef?, rhs: PCPoint) -> CGContextRef? {
+public func -+- (lhs: CGContextRef?, rhs: TPoint) -> CGContextRef? {
     
     CGContextAddLineToPoint(lhs, rhs.x, rhs.y); return lhs
     
@@ -52,7 +49,7 @@ infix operator -~- { associativity left precedence 200 }
 
 
 /// Add Curve To Point
-public func -~- (lhs: CGContextRef?, rhs: (PCPoint, PCPoint, PCPoint)) -> CGContextRef? {
+public func -~- (lhs: CGContextRef?, rhs: (TPoint, TPoint, TPoint)) -> CGContextRef? {
     
     lhs -~- (rhs.0.x,rhs.0.y,rhs.1.x,rhs.1.y,rhs.2.x,rhs.2.y); return lhs
     
@@ -78,7 +75,7 @@ public func -~- (lhs: CGContextRef?, rhs: (CGFloat,CGFloat,CGFloat,CGFloat,CGFlo
 infix operator -•- { associativity left precedence 200 }
 
 /// CGContext Create Dot : Diameter = Stroke Width
-public func -•- (lhs: CGContextRef?, rhs: PCPoint) -> CGContextRef? {
+public func -•- (lhs: CGContextRef?, rhs: TPoint) -> CGContextRef? {
     
     return lhs ->- rhs -+- rhs -□ nil
 

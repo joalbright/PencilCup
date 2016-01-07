@@ -84,8 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-PencilCup_Example/Inlinit.framework"
   install_framework "Pods-PencilCup_Example/PencilCup.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-PencilCup_Example/Inlinit.framework"
   install_framework "Pods-PencilCup_Example/PencilCup.framework"
 fi

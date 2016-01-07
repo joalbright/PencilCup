@@ -22,5 +22,10 @@
     "PencilCup": [
       "Pod/Assets/*.png"
     ]
+  },
+  "dependencies": {
+    "Inlinit": [
+      "~> 0.1"
+    ]
   }
 }

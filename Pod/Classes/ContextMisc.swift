@@ -1,17 +1,15 @@
 //
-//  Operators.swift
+//  ContextMisc.swift
 //  PencilCup
 //
 //  Created by Jo Albright on 10/28/15.
 //  Copyright © 2015 Jo Albright. All rights reserved.
 //
 
-import UIKit
-
-public typealias PCPoint = (x: CGFloat, y: CGFloat)
-public typealias PCSize = (width: CGFloat, height: CGFloat)
-public typealias PCScale = (x: CGFloat, y: CGFloat)
-public typealias PCDelta = (dx: CGFloat, dy: CGFloat)
+public typealias TPoint = (x: CGFloat, y: CGFloat)
+public typealias TSize = (width: CGFloat, height: CGFloat)
+public typealias TScale = (x: CGFloat, y: CGFloat)
+public typealias TDelta = (dx: CGFloat, dy: CGFloat)
 
 /// Update left CGPoint with offset of right CGPoint
 public func += (inout lhs: CGPoint, rhs: CGPoint) {
@@ -36,7 +34,7 @@ public func - (lhs: CGPoint, rhs: CGPoint) -> CGPoint {
 
 }
 
-public func - (lhs: CGPoint, rhs: PCPoint) -> CGPoint {
+public func - (lhs: CGPoint, rhs: TPoint) -> CGPoint {
     
     return CGPoint(x: lhs.x - rhs.x, y: lhs.y - rhs.y)
 
@@ -61,12 +59,29 @@ public func * (lhs: CGSize, rhs: CGFloat) -> CGSize {
 
 /// Scale a CGSize by CGFloat value
 /// - returns: CGSize
-public func * (lhs: PCSize, rhs: CGFloat) -> PCSize {
+public func * (lhs: TSize, rhs: CGFloat) -> TSize {
     
     return (width: lhs.width * rhs, height: lhs.height * rhs)
 
 }
 
 
-
-
+extension CGFloat {
+    
+    init(_ n:CGFloat, min: CGFloat, max: CGFloat) {
+        
+        self = n
+        if n < min { self = min }
+        if n > max { self = max }
+        
+    }
+    
+    init(_ n:CGFloat, range: Range<Int>) {
+        
+        self = n
+        if n < CGFloat(range.minElement() ?? 0) { self = CGFloat(range.minElement() ?? 0) }
+        if n > CGFloat(range.maxElement() ?? 0) { self = CGFloat(range.maxElement() ?? 0) }
+        
+    }
+    
+}

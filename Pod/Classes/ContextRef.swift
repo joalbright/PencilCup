@@ -1,13 +1,10 @@
 //
-//  Types.swift
+//  ContextRef.swift
 //  PencilCup
 //
 //  Created by Jo Albright on 1/4/16.
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
-
-import UIKit
-
 
 public extension CGContextRef {
     
@@ -77,7 +74,7 @@ public extension CGContextRef {
     
     }
     
-    func offset(point: PCPoint) -> CGContextRef? {
+    func offset(point: TPoint) -> CGContextRef? {
         
         CGContextTranslateCTM(self, point.x, point.y); return self
     

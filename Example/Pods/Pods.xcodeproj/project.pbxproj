@@ -7,120 +7,196 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E117C97BB6CFC0F231A54509D775ED5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		1BC7BB3EE63777E4BA7423DA422E7B8F /* PencilCup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1F81428BA35FBC5A16184800DB0EA9B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		2C96886AAA9CE4C455AEA562D557360D /* PencilCup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */; };
-		8A3B74E450F8A0A02B28A462F2208A61 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02F3BCC2CC4CD4CED1F0F063B4781D2D /* Context.swift */; };
-		9141C982B02239E087E48D1476934DFE /* Pods-PencilCup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 783D25D621093CE2D709997B845E8F23 /* Pods-PencilCup_Example-dummy.m */; };
-		A939C7011C3DCDB4001EC587 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939C7001C3DCDB4001EC587 /* Path.swift */; };
-		A939C7021C3DD2A2001EC587 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15B565F90509209C3AE4FC7759E5410 /* Misc.swift */; };
-		A939C7041C3DD2C8001EC587 /* Rect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939C7031C3DD2C8001EC587 /* Rect.swift */; };
-		B22B8FB59522FA5A332D788C88991D02 /* PencilCup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */; };
-		B35AEDA433901338C04DC9E899A1A052 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		B866105F5C3370B20A3ACC85F7343E65 /* Pods-PencilCup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B516F6E82FA8AAB8D52F0AA7C4280C /* Pods-PencilCup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E72491C54226C7A3E2E6151789BB540A /* Pods-PencilCup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB433770A9F39614B20F56FA3F5D2088 /* Pods-PencilCup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4458097FA2A8158B99A274DE27CB407 /* Pods-PencilCup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */; };
+		015697A562C71FE6EECD61F2822EB1E3 /* Inlinit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C66E21267B3BEE248570424ED85641 /* Inlinit-dummy.m */; };
+		0C45A6575D848186B3F7993BCFAC3861 /* PencilCup-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1193869755D0F9E38C30406A4D68977F /* DrawableInkWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853918CCE030FBD60D57FF164A0F19B5 /* DrawableInkWell.swift */; };
+		24278733794392475AD2B71D66943F83 /* ContextRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */; };
+		2EAFE828F72CB434B41216F090FD0976 /* Pods-PencilCup_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */; };
+		3639848D15AC9A231A4CE88BC64FCA24 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
+		3F5354D8D8895CBFC20EEA12F8835CAB /* Inlinit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3CB0FBDDAE34FC475045C0912D172929 /* Inlinit.bundle */; };
+		50203BA5C52E50D5C5F0DE4C2BF74153 /* Pods-PencilCup_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4B516F6E82FA8AAB8D52F0AA7C4280C /* Pods-PencilCup_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63715CC128044BC3C12ED8B912AF0EC1 /* DrawableCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD7C474CD1CE7F2C6CF26F40810CE6E /* DrawableCanvas.swift */; };
+		6C8289307439752D262CF6D9D7C86B14 /* PencilCup-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */; };
+		6E4A8BAD456A7EB8893FB4B4C100F34D /* ContextPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */; };
+		8C61570020C8E87F64009B443ADF1FEA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
+		8E669EF60A3E483A096347746C2B2F5A /* ContextRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */; };
+		9F3DD34786B85A409827C33ABE1DA402 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
+		A393263508A6E6F7E44BB2353CC4FC5D /* ContextMisc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */; };
+		A939C7131C3DF93F001EC587 /* ContextPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939C7111C3DF857001EC587 /* ContextPoint.swift */; };
+		A939C7161C3E00CD001EC587 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA62A18F965BA85C50EF31A397D6865 /* Drawable.swift */; };
+		AC38D25C1725FFF2D8A1D7FEA39F2F17 /* Inlinit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B40636FB6336192DE9ED7A8586F7264 /* Inlinit.framework */; };
+		C08D9BAFE9D9C47006DA7CBDED315C23 /* Inlinit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CABBECBE593B22FEF92E6145CD33E4 /* Inlinit.swift */; };
+		D152BCC00DDC29E45126F8318D9BA1A1 /* Pods-PencilCup_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB433770A9F39614B20F56FA3F5D2088 /* Pods-PencilCup_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1C1EEEEED3EDF6B6F43BE0C1F442AEA /* Inlinit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 87C09811882679082E3FC1B8BDF2361C /* Inlinit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7043DD40159777037E30F937D7382C9 /* Pods-PencilCup_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 783D25D621093CE2D709997B845E8F23 /* Pods-PencilCup_Example-dummy.m */; };
+		E0ADF0CA6F1878AE891336B668030886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88C47A896BF991FBA16673898D698749 /* Foundation.framework */; };
+		EBA08F150AAB20B8A8530EEBB681D763 /* PencilCup.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B915B2406C758E8F9D61B187F69B0EC1 /* PencilCup.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6BF646FD8DEBC7C3B9FA2C52E9ADD0E7 /* PBXContainerItemProxy */ = {
+		06618A23F5FC9AD558A2957FF32F0965 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80FC1A80DA043A8F9F71F59C949414A3;
+			remoteGlobalIDString = 355A8130A8D2850F533856347CFA7BFB;
+			remoteInfo = "Inlinit-Inlinit";
+		};
+		31AEA1B4366DF881ADC101BA54C70F71 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C91A2BD2A58BB9A31D57ABE945F7E19;
+			remoteInfo = Inlinit;
+		};
+		35C86965CA8D3F379A5E62E308E80DCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0977C09246FF0645FB790E0A1E0E446F;
 			remoteInfo = PencilCup;
 		};
-		6ECF863AE9B61C30631BE9FC7C1DD51D /* PBXContainerItemProxy */ = {
+		78E504897A07BB9278B9ECC628C5A83F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FAFD27713AE6DFDD665927950DA55653;
+			remoteGlobalIDString = 5C91A2BD2A58BB9A31D57ABE945F7E19;
+			remoteInfo = Inlinit;
+		};
+		9C5EEAD49A4470E7AE5B90D448FCA3C9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C91A2BD2A58BB9A31D57ABE945F7E19;
+			remoteInfo = Inlinit;
+		};
+		AF40E40B88F29E6F65EACA372DEE9E62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D93ACD2A885C548A46B4AED572C69EC7;
 			remoteInfo = "PencilCup-PencilCup";
 		};
-		D92DD721E8BA2D74BA6AF5BB0BB0E48B /* PBXContainerItemProxy */ = {
+		C79340F9F4E18B5A14E4EB05D8B697E5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 80FC1A80DA043A8F9F71F59C949414A3;
+			remoteGlobalIDString = 0977C09246FF0645FB790E0A1E0E446F;
 			remoteInfo = PencilCup;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02F3BCC2CC4CD4CED1F0F063B4781D2D /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Context.swift; sourceTree = "<group>"; };
 		0580060B49F101B6D2EA9B8A526F8246 /* Pods-PencilCup_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PencilCup_Example.modulemap"; sourceTree = "<group>"; };
 		0F3E72FB89337E4A33575116C262DD5C /* Pods-PencilCup_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PencilCup_Tests-dummy.m"; sourceTree = "<group>"; };
-		24BE283725671962C7AB2230B0FA2218 /* Pods_PencilCup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CA62A18F965BA85C50EF31A397D6865 /* Drawable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Drawable.swift; sourceTree = "<group>"; };
 		2756FDCF530CADCCCE5382553593843D /* Pods-PencilCup_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Tests-resources.sh"; sourceTree = "<group>"; };
-		2869D1CE5A0606D63480F05814F7CA93 /* Pods_PencilCup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilCup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B97652A6BD63CE0E0307E58C05D7C2C /* Pods-PencilCup_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		34B738DDDD850D729EFF7DD2ABEE7E45 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3628220F26B71E52E569A68C018E3F75 /* Pods-PencilCup_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PencilCup_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		39AECD8CF557E6BEBC0F111AE332EDF9 /* Pods-PencilCup_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Example-resources.sh"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3CB0FBDDAE34FC475045C0912D172929 /* Inlinit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Inlinit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F8C8B27482C7A068A79C2ADFD01E8AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B40636FB6336192DE9ED7A8586F7264 /* Inlinit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inlinit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		549F20D9A4B525D0DCA930B9BD609093 /* Pods-PencilCup_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-PencilCup_Tests.modulemap"; sourceTree = "<group>"; };
+		56DC7DFC17A65685FBC9376E8C51A40A /* PencilCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PencilCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DD7C474CD1CE7F2C6CF26F40810CE6E /* DrawableCanvas.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DrawableCanvas.swift; sourceTree = "<group>"; };
+		65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextRect.swift; sourceTree = "<group>"; };
 		67821304CC0969A494E79E7B7C815D6D /* PencilCup-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PencilCup-prefix.pch"; sourceTree = "<group>"; };
 		70AE2EE5FF3EA8616976084E95DCBE90 /* PencilCup.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = PencilCup.modulemap; sourceTree = "<group>"; };
+		71FC9E05412B644F9A334F12014B6A94 /* Inlinit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Inlinit.modulemap; sourceTree = "<group>"; };
 		7326354E9BC0FB0DB86433D8AF3870D2 /* Pods-PencilCup_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Example.release.xcconfig"; sourceTree = "<group>"; };
+		74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextMisc.swift; sourceTree = "<group>"; };
 		783D25D621093CE2D709997B845E8F23 /* Pods-PencilCup_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PencilCup_Example-dummy.m"; sourceTree = "<group>"; };
 		78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PencilCup.xcconfig; sourceTree = "<group>"; };
 		7BE626D52E1F2A8639FFC06C9A125401 /* Pods-PencilCup_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextPath.swift; sourceTree = "<group>"; };
+		853918CCE030FBD60D57FF164A0F19B5 /* DrawableInkWell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DrawableInkWell.swift; sourceTree = "<group>"; };
+		87C09811882679082E3FC1B8BDF2361C /* Inlinit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Inlinit-umbrella.h"; sourceTree = "<group>"; };
+		87C66E21267B3BEE248570424ED85641 /* Inlinit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Inlinit-dummy.m"; sourceTree = "<group>"; };
+		88C47A896BF991FBA16673898D698749 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		88E0907AF60502BF92458BF39E1A2BC3 /* PencilCup-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PencilCup-dummy.m"; sourceTree = "<group>"; };
-		A15B565F90509209C3AE4FC7759E5410 /* Misc.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
-		A939C7001C3DCDB4001EC587 /* Path.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		A939C7031C3DD2C8001EC587 /* Rect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rect.swift; sourceTree = "<group>"; };
+		966E22A8BA3975920574BFAC87327769 /* Pods_PencilCup_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A939C7111C3DF857001EC587 /* ContextPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContextPoint.swift; sourceTree = "<group>"; };
 		B058A7A10097688AB16B8BF4F004C34E /* Pods-PencilCup_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PencilCup_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B1CD2827353609B008DE8AC92A88561A /* Pods-PencilCup_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PencilCup_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B322A02C2742CF1DAE83B4416433ADA3 /* Pods-PencilCup_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B333240BACFFBECCE5283C1C86B62128 /* Inlinit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Inlinit-prefix.pch"; sourceTree = "<group>"; };
 		B4B516F6E82FA8AAB8D52F0AA7C4280C /* Pods-PencilCup_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PencilCup_Tests-umbrella.h"; sourceTree = "<group>"; };
 		B721C3611465C7EA5545E1A360A47B39 /* Pods-PencilCup_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PencilCup_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B915B2406C758E8F9D61B187F69B0EC1 /* PencilCup.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PencilCup.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BB3473D55A54A77E4AF059AA9D8A8FBD /* PencilCup.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PencilCup.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB433770A9F39614B20F56FA3F5D2088 /* Pods-PencilCup_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PencilCup_Example-umbrella.h"; sourceTree = "<group>"; };
 		D1C6128FBD3521A00005950E6D2D90FE /* Pods-PencilCup_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PencilCup_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		D4E1165838FDECF03B2D926CF3367524 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7795F343FF2058BB962B096882E9594 /* Inlinit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Inlinit.xcconfig; sourceTree = "<group>"; };
+		DE0FE5B76F4D7C2A06A6DD2B5B8D1ACF /* Inlinit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Inlinit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA9855E953149A5633FF73CDB02B7269 /* Pods_PencilCup_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PencilCup_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1CABBECBE593B22FEF92E6145CD33E4 /* Inlinit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Inlinit.swift; path = Pod/Classes/Inlinit.swift; sourceTree = "<group>"; };
 		FB92EBFECDC3D6D2D1FD8F062B362A3B /* PencilCup-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PencilCup-umbrella.h"; sourceTree = "<group>"; };
+		FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ContextRef.swift; sourceTree = "<group>"; };
 		FE035B7B52CD23560C78E9B83E27511E /* Pods-PencilCup_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PencilCup_Example-frameworks.sh"; sourceTree = "<group>"; };
 		FE1938A52A6C95D6067960CF6AD80FCE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5B27808A7E8947926284557A9207250E /* Frameworks */ = {
+		404BBF4ADBE3AA35C35B519F16BECDD6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F81428BA35FBC5A16184800DB0EA9B7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A3852BEC6CF7B64EF4134B32AECE724 /* Frameworks */ = {
+		61899DB1FEF902BFCEDFAC6643A2160D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E117C97BB6CFC0F231A54509D775ED5 /* Foundation.framework in Frameworks */,
+				E0ADF0CA6F1878AE891336B668030886 /* Foundation.framework in Frameworks */,
+				AC38D25C1725FFF2D8A1D7FEA39F2F17 /* Inlinit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		97F2B9394FC00D22981541ED8F3CBF6C /* Frameworks */ = {
+		764F3BFB8BFE33F22F9C889C8650FE46 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B35AEDA433901338C04DC9E899A1A052 /* Foundation.framework in Frameworks */,
+				9F3DD34786B85A409827C33ABE1DA402 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FFB3D77BFFF0D5E2EFB30F9D2F7ED4A1 /* Frameworks */ = {
+		918D3FE31D2F4BAE45A1279D160A09FC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C61570020C8E87F64009B443ADF1FEA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A2CE7BE7BBDD0A5F1BDD9D1F571BE522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D40F617DC56E0CBD1422E2246983B35B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3639848D15AC9A231A4CE88BC64FCA24 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01F64DFF7C57830E443F8365B558CE3E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				88C47A896BF991FBA16673898D698749 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		0F58B1C15BC0AA15206BD8B564E870CD /* Pods-PencilCup_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -139,15 +215,34 @@
 			path = "Target Support Files/Pods-PencilCup_Tests";
 			sourceTree = "<group>";
 		};
-		34E3D943AE5C2F143B6ACF642F4CBCD7 /* Classes */ = {
+		24AE57C32EDA5B8BC2308F670E3B8B5A /* Inlinit */ = {
 			isa = PBXGroup;
 			children = (
-				A15B565F90509209C3AE4FC7759E5410 /* Misc.swift */,
-				02F3BCC2CC4CD4CED1F0F063B4781D2D /* Context.swift */,
-				A939C7001C3DCDB4001EC587 /* Path.swift */,
-				A939C7031C3DD2C8001EC587 /* Rect.swift */,
+				F1CABBECBE593B22FEF92E6145CD33E4 /* Inlinit.swift */,
+				B7AA6A59598635C1CA783580E9C9BCE5 /* Support Files */,
 			);
-			path = Classes;
+			path = Inlinit;
+			sourceTree = "<group>";
+		};
+		262706842CDAA50871E93A7BB05B3AD6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3CB0FBDDAE34FC475045C0912D172929 /* Inlinit.bundle */,
+				DE0FE5B76F4D7C2A06A6DD2B5B8D1ACF /* Inlinit.framework */,
+				B915B2406C758E8F9D61B187F69B0EC1 /* PencilCup.bundle */,
+				56DC7DFC17A65685FBC9376E8C51A40A /* PencilCup.framework */,
+				966E22A8BA3975920574BFAC87327769 /* Pods_PencilCup_Example.framework */,
+				EA9855E953149A5633FF73CDB02B7269 /* Pods_PencilCup_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E1E1C7B878962DA60FD82B32F434129 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				7651FE21D94569121B709DF09BE2DAF4 /* Classes */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 		428F844A76BE689C7055F3D198056BAC /* Development Pods */ = {
@@ -176,52 +271,72 @@
 			path = "Target Support Files/Pods-PencilCup_Example";
 			sourceTree = "<group>";
 		};
+		7651FE21D94569121B709DF09BE2DAF4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1CA62A18F965BA85C50EF31A397D6865 /* Drawable.swift */,
+				5DD7C474CD1CE7F2C6CF26F40810CE6E /* DrawableCanvas.swift */,
+				853918CCE030FBD60D57FF164A0F19B5 /* DrawableInkWell.swift */,
+				74036AA4A4ECD787831B3B640E667872 /* ContextMisc.swift */,
+				8066D1C7CE1CF7D9DD0B21C0A8552536 /* ContextPath.swift */,
+				A939C7111C3DF857001EC587 /* ContextPoint.swift */,
+				65CC2A2EAC4EFB51A32E6AB2504DA1A1 /* ContextRect.swift */,
+				FD9F34E3849D98C1B108654013811356 /* ContextRef.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				428F844A76BE689C7055F3D198056BAC /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				C3BED3F976915D9B9E58F969A7B88E56 /* Products */,
+				9219B4B76B48F6DD788F752A9E34BC8E /* Frameworks */,
+				CB0A3990C8373D7B8E2C205B7FB2FB1E /* Pods */,
+				262706842CDAA50871E93A7BB05B3AD6 /* Products */,
 				D13676AE34DBAF8CAD6A58BF27408D22 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		9219B4B76B48F6DD788F752A9E34BC8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4B40636FB6336192DE9ED7A8586F7264 /* Inlinit.framework */,
+				01F64DFF7C57830E443F8365B558CE3E /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		ABBB1B7C9E99DF3F824EF20F9C3FF6CB /* PencilCup */ = {
 			isa = PBXGroup;
 			children = (
-				ECFB7127CD9E299471D48B293CDAA31A /* Pod */,
+				2E1E1C7B878962DA60FD82B32F434129 /* Pod */,
 				D01451B4E9929942612C748BE1E4F781 /* Support Files */,
 			);
 			name = PencilCup;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		B7AA6A59598635C1CA783580E9C9BCE5 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+				3F8C8B27482C7A068A79C2ADFD01E8AF /* Info.plist */,
+				71FC9E05412B644F9A334F12014B6A94 /* Inlinit.modulemap */,
+				D7795F343FF2058BB962B096882E9594 /* Inlinit.xcconfig */,
+				87C66E21267B3BEE248570424ED85641 /* Inlinit-dummy.m */,
+				B333240BACFFBECCE5283C1C86B62128 /* Inlinit-prefix.pch */,
+				87C09811882679082E3FC1B8BDF2361C /* Inlinit-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/Inlinit";
 			sourceTree = "<group>";
 		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+		CB0A3990C8373D7B8E2C205B7FB2FB1E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+				24AE57C32EDA5B8BC2308F670E3B8B5A /* Inlinit */,
 			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C3BED3F976915D9B9E58F969A7B88E56 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */,
-				BB3473D55A54A77E4AF059AA9D8A8FBD /* PencilCup.framework */,
-				24BE283725671962C7AB2230B0FA2218 /* Pods_PencilCup_Example.framework */,
-				2869D1CE5A0606D63480F05814F7CA93 /* Pods_PencilCup_Tests.framework */,
-			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		D01451B4E9929942612C748BE1E4F781 /* Support Files */ = {
@@ -247,106 +362,145 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		ECFB7127CD9E299471D48B293CDAA31A /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				34E3D943AE5C2F143B6ACF642F4CBCD7 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		2C0073A482876AF9D4C52600515CF0C5 /* Headers */ = {
+		21912EAE4E6FD9982E5673A5C0050479 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E72491C54226C7A3E2E6151789BB540A /* Pods-PencilCup_Example-umbrella.h in Headers */,
+				D1C1EEEEED3EDF6B6F43BE0C1F442AEA /* Inlinit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7A59E6A6162B2C03B57CC7FC2284A248 /* Headers */ = {
+		29E5BCB018B4C671A73F0EB796D59E09 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B866105F5C3370B20A3ACC85F7343E65 /* Pods-PencilCup_Tests-umbrella.h in Headers */,
+				D152BCC00DDC29E45126F8318D9BA1A1 /* Pods-PencilCup_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CB9B1B60B6A4F1601B8607312B4B6265 /* Headers */ = {
+		475AFEA6B63F3329ABF5C3776DF0124C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BC7BB3EE63777E4BA7423DA422E7B8F /* PencilCup-umbrella.h in Headers */,
+				50203BA5C52E50D5C5F0DE4C2BF74153 /* Pods-PencilCup_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58AF4B8335244A72FB9DCC796ABBC641 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C45A6575D848186B3F7993BCFAC3861 /* PencilCup-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1D844E2F1CFB977773C4A502F3D459EF /* Pods-PencilCup_Tests */ = {
+		0977C09246FF0645FB790E0A1E0E446F /* PencilCup */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E5B784DC2C419BD92F47BAC1DEAF7DA7 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Tests" */;
+			buildConfigurationList = 269DD5EBE4E01E4C7B5FCE6327EBBC4E /* Build configuration list for PBXNativeTarget "PencilCup" */;
 			buildPhases = (
-				A3134F295AE4BB7AE9E3F9EDDE3E28B5 /* Sources */,
-				8A3852BEC6CF7B64EF4134B32AECE724 /* Frameworks */,
-				7A59E6A6162B2C03B57CC7FC2284A248 /* Headers */,
+				6C7891D4C78A5CE79FA89E4F60AFAF14 /* Sources */,
+				61899DB1FEF902BFCEDFAC6643A2160D /* Frameworks */,
+				EFC28500ABC4AAB3D985A9A422B18980 /* Resources */,
+				58AF4B8335244A72FB9DCC796ABBC641 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CBC3C92BAFC220169B53526A8CC11773 /* PBXTargetDependency */,
-			);
-			name = "Pods-PencilCup_Tests";
-			productName = "Pods-PencilCup_Tests";
-			productReference = 2869D1CE5A0606D63480F05814F7CA93 /* Pods_PencilCup_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = E363787ADD0BD0B76D1012AFB2F44B6E /* Build configuration list for PBXNativeTarget "PencilCup" */;
-			buildPhases = (
-				2CD3348C6A71B1220B753DE81461F70F /* Sources */,
-				5B27808A7E8947926284557A9207250E /* Frameworks */,
-				2BAD3FD2855FD3818AC164242C463CFA /* Resources */,
-				CB9B1B60B6A4F1601B8607312B4B6265 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A055F35A4909F1F3510995476EB8EF17 /* PBXTargetDependency */,
+				76748580B224A77D92E9BBDA1362B545 /* PBXTargetDependency */,
+				0A40C4B6822FA5B400887AFB30213FEF /* PBXTargetDependency */,
 			);
 			name = PencilCup;
 			productName = PencilCup;
-			productReference = BB3473D55A54A77E4AF059AA9D8A8FBD /* PencilCup.framework */;
+			productReference = 56DC7DFC17A65685FBC9376E8C51A40A /* PencilCup.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F52B5E69070A2516ED8ECEC23C109664 /* Pods-PencilCup_Example */ = {
+		355A8130A8D2850F533856347CFA7BFB /* Inlinit-Inlinit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1ADA4D12214CA88F1555FA5B8CDAB541 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Example" */;
+			buildConfigurationList = 5691A944ED2A18C8D9A1299C1BBD9CDD /* Build configuration list for PBXNativeTarget "Inlinit-Inlinit" */;
 			buildPhases = (
-				CAE8AE1A9E47B7190E968CB50BEDE965 /* Sources */,
-				97F2B9394FC00D22981541ED8F3CBF6C /* Frameworks */,
-				2C0073A482876AF9D4C52600515CF0C5 /* Headers */,
+				CE5157CD85F8C1AA774AF8E05EB27A55 /* Sources */,
+				404BBF4ADBE3AA35C35B519F16BECDD6 /* Frameworks */,
+				8239A27C1ABEDFEC7ACE1C4980A54D1E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F3D7E114D49E2D021B480C562B3FB041 /* PBXTargetDependency */,
+			);
+			name = "Inlinit-Inlinit";
+			productName = "Inlinit-Inlinit";
+			productReference = 3CB0FBDDAE34FC475045C0912D172929 /* Inlinit.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		5C91A2BD2A58BB9A31D57ABE945F7E19 /* Inlinit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE1CC6849DAC07314FCCBBBE45AEF778 /* Build configuration list for PBXNativeTarget "Inlinit" */;
+			buildPhases = (
+				B96FD1BFD3F73C6E6E897D061E2FBF42 /* Sources */,
+				918D3FE31D2F4BAE45A1279D160A09FC /* Frameworks */,
+				1300AE3BD668D6ADE5341779F5754245 /* Resources */,
+				21912EAE4E6FD9982E5673A5C0050479 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				74544BE7C199394B57A41D30C5D5F62D /* PBXTargetDependency */,
+			);
+			name = Inlinit;
+			productName = Inlinit;
+			productReference = DE0FE5B76F4D7C2A06A6DD2B5B8D1ACF /* Inlinit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		60E330D9BEB224B729F6BA7C65FB4201 /* Pods-PencilCup_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 93A673D8889E7F2AC439680973E66986 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Example" */;
+			buildPhases = (
+				3C3CB3C24DAA21DA42D96E76FD971FC5 /* Sources */,
+				D40F617DC56E0CBD1422E2246983B35B /* Frameworks */,
+				29E5BCB018B4C671A73F0EB796D59E09 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C018592349B340BE9AF7BE8C9ADDF211 /* PBXTargetDependency */,
+				C8708411F0430D76127FE49B46AE1B37 /* PBXTargetDependency */,
 			);
 			name = "Pods-PencilCup_Example";
 			productName = "Pods-PencilCup_Example";
-			productReference = 24BE283725671962C7AB2230B0FA2218 /* Pods_PencilCup_Example.framework */;
+			productReference = 966E22A8BA3975920574BFAC87327769 /* Pods_PencilCup_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FAFD27713AE6DFDD665927950DA55653 /* PencilCup-PencilCup */ = {
+		AE1DD673CF7DF1B8A3F409B2A18E5CC3 /* Pods-PencilCup_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 20E98C00F508592AA0C0D95ECA72EACE /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */;
+			buildConfigurationList = C4F212113ED229143D7DE408401BE143 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Tests" */;
 			buildPhases = (
-				B16182D81D40763EF49F7C826BF30386 /* Sources */,
-				FFB3D77BFFF0D5E2EFB30F9D2F7ED4A1 /* Frameworks */,
-				06DB1CD5A39A51C53DEAB125086B2243 /* Resources */,
+				D97F9B689A37ACD440A51FF2CF886F88 /* Sources */,
+				764F3BFB8BFE33F22F9C889C8650FE46 /* Frameworks */,
+				475AFEA6B63F3329ABF5C3776DF0124C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9567A0AF1010B526500C0072B98F5C07 /* PBXTargetDependency */,
+				51612FCAC9C5FB2D3B0975675614DB34 /* PBXTargetDependency */,
+			);
+			name = "Pods-PencilCup_Tests";
+			productName = "Pods-PencilCup_Tests";
+			productReference = EA9855E953149A5633FF73CDB02B7269 /* Pods_PencilCup_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D93ACD2A885C548A46B4AED572C69EC7 /* PencilCup-PencilCup */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 442841CD2B0ACC31E3F71F5F35ED0B77 /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */;
+			buildPhases = (
+				5174E300562B744FD58CF97AFF585174 /* Sources */,
+				A2CE7BE7BBDD0A5F1BDD9D1F571BE522 /* Frameworks */,
+				D9CBA7CCB7F14ED8E6BCC1C63AD95050 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -354,7 +508,7 @@
 			);
 			name = "PencilCup-PencilCup";
 			productName = "PencilCup-PencilCup";
-			productReference = 2B65C31EA17F6394B71D9BAB52A020EF /* PencilCup.bundle */;
+			productReference = B915B2406C758E8F9D61B187F69B0EC1 /* PencilCup.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -374,188 +528,184 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C3BED3F976915D9B9E58F969A7B88E56 /* Products */;
+			productRefGroup = 262706842CDAA50871E93A7BB05B3AD6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */,
-				FAFD27713AE6DFDD665927950DA55653 /* PencilCup-PencilCup */,
-				F52B5E69070A2516ED8ECEC23C109664 /* Pods-PencilCup_Example */,
-				1D844E2F1CFB977773C4A502F3D459EF /* Pods-PencilCup_Tests */,
+				5C91A2BD2A58BB9A31D57ABE945F7E19 /* Inlinit */,
+				355A8130A8D2850F533856347CFA7BFB /* Inlinit-Inlinit */,
+				0977C09246FF0645FB790E0A1E0E446F /* PencilCup */,
+				D93ACD2A885C548A46B4AED572C69EC7 /* PencilCup-PencilCup */,
+				60E330D9BEB224B729F6BA7C65FB4201 /* Pods-PencilCup_Example */,
+				AE1DD673CF7DF1B8A3F409B2A18E5CC3 /* Pods-PencilCup_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		06DB1CD5A39A51C53DEAB125086B2243 /* Resources */ = {
+		1300AE3BD668D6ADE5341779F5754245 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F5354D8D8895CBFC20EEA12F8835CAB /* Inlinit.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8239A27C1ABEDFEC7ACE1C4980A54D1E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BAD3FD2855FD3818AC164242C463CFA /* Resources */ = {
+		D9CBA7CCB7F14ED8E6BCC1C63AD95050 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C96886AAA9CE4C455AEA562D557360D /* PencilCup.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EFC28500ABC4AAB3D985A9A422B18980 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBA08F150AAB20B8A8530EEBB681D763 /* PencilCup.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2CD3348C6A71B1220B753DE81461F70F /* Sources */ = {
+		3C3CB3C24DAA21DA42D96E76FD971FC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B22B8FB59522FA5A332D788C88991D02 /* PencilCup-dummy.m in Sources */,
-				A939C7021C3DD2A2001EC587 /* Misc.swift in Sources */,
-				A939C7011C3DCDB4001EC587 /* Path.swift in Sources */,
-				A939C7041C3DD2C8001EC587 /* Rect.swift in Sources */,
-				8A3B74E450F8A0A02B28A462F2208A61 /* Context.swift in Sources */,
+				D7043DD40159777037E30F937D7382C9 /* Pods-PencilCup_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3134F295AE4BB7AE9E3F9EDDE3E28B5 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F4458097FA2A8158B99A274DE27CB407 /* Pods-PencilCup_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B16182D81D40763EF49F7C826BF30386 /* Sources */ = {
+		5174E300562B744FD58CF97AFF585174 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CAE8AE1A9E47B7190E968CB50BEDE965 /* Sources */ = {
+		6C7891D4C78A5CE79FA89E4F60AFAF14 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9141C982B02239E087E48D1476934DFE /* Pods-PencilCup_Example-dummy.m in Sources */,
+				63715CC128044BC3C12ED8B912AF0EC1 /* DrawableCanvas.swift in Sources */,
+				24278733794392475AD2B71D66943F83 /* ContextRef.swift in Sources */,
+				A939C7131C3DF93F001EC587 /* ContextPoint.swift in Sources */,
+				1193869755D0F9E38C30406A4D68977F /* DrawableInkWell.swift in Sources */,
+				A393263508A6E6F7E44BB2353CC4FC5D /* ContextMisc.swift in Sources */,
+				6E4A8BAD456A7EB8893FB4B4C100F34D /* ContextPath.swift in Sources */,
+				A939C7161C3E00CD001EC587 /* Drawable.swift in Sources */,
+				6C8289307439752D262CF6D9D7C86B14 /* PencilCup-dummy.m in Sources */,
+				8E669EF60A3E483A096347746C2B2F5A /* ContextRect.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B96FD1BFD3F73C6E6E897D061E2FBF42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				015697A562C71FE6EECD61F2822EB1E3 /* Inlinit-dummy.m in Sources */,
+				C08D9BAFE9D9C47006DA7CBDED315C23 /* Inlinit.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE5157CD85F8C1AA774AF8E05EB27A55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D97F9B689A37ACD440A51FF2CF886F88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAFE828F72CB434B41216F090FD0976 /* Pods-PencilCup_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A055F35A4909F1F3510995476EB8EF17 /* PBXTargetDependency */ = {
+		0A40C4B6822FA5B400887AFB30213FEF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PencilCup-PencilCup";
-			target = FAFD27713AE6DFDD665927950DA55653 /* PencilCup-PencilCup */;
-			targetProxy = 6ECF863AE9B61C30631BE9FC7C1DD51D /* PBXContainerItemProxy */;
+			target = D93ACD2A885C548A46B4AED572C69EC7 /* PencilCup-PencilCup */;
+			targetProxy = AF40E40B88F29E6F65EACA372DEE9E62 /* PBXContainerItemProxy */;
 		};
-		CBC3C92BAFC220169B53526A8CC11773 /* PBXTargetDependency */ = {
+		51612FCAC9C5FB2D3B0975675614DB34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PencilCup;
-			target = 80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */;
-			targetProxy = 6BF646FD8DEBC7C3B9FA2C52E9ADD0E7 /* PBXContainerItemProxy */;
+			target = 0977C09246FF0645FB790E0A1E0E446F /* PencilCup */;
+			targetProxy = C79340F9F4E18B5A14E4EB05D8B697E5 /* PBXContainerItemProxy */;
 		};
-		F3D7E114D49E2D021B480C562B3FB041 /* PBXTargetDependency */ = {
+		74544BE7C199394B57A41D30C5D5F62D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Inlinit-Inlinit";
+			target = 355A8130A8D2850F533856347CFA7BFB /* Inlinit-Inlinit */;
+			targetProxy = 06618A23F5FC9AD558A2957FF32F0965 /* PBXContainerItemProxy */;
+		};
+		76748580B224A77D92E9BBDA1362B545 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Inlinit;
+			target = 5C91A2BD2A58BB9A31D57ABE945F7E19 /* Inlinit */;
+			targetProxy = 9C5EEAD49A4470E7AE5B90D448FCA3C9 /* PBXContainerItemProxy */;
+		};
+		9567A0AF1010B526500C0072B98F5C07 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Inlinit;
+			target = 5C91A2BD2A58BB9A31D57ABE945F7E19 /* Inlinit */;
+			targetProxy = 78E504897A07BB9278B9ECC628C5A83F /* PBXContainerItemProxy */;
+		};
+		C018592349B340BE9AF7BE8C9ADDF211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Inlinit;
+			target = 5C91A2BD2A58BB9A31D57ABE945F7E19 /* Inlinit */;
+			targetProxy = 31AEA1B4366DF881ADC101BA54C70F71 /* PBXContainerItemProxy */;
+		};
+		C8708411F0430D76127FE49B46AE1B37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PencilCup;
-			target = 80FC1A80DA043A8F9F71F59C949414A3 /* PencilCup */;
-			targetProxy = D92DD721E8BA2D74BA6AF5BB0BB0E48B /* PBXContainerItemProxy */;
+			target = 0977C09246FF0645FB790E0A1E0E446F /* PencilCup */;
+			targetProxy = 35C86965CA8D3F379A5E62E308E80DCA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0DEA5C00E5A819199810B2495CBE35D9 /* Release */ = {
+		26EE02292D9B5EF46C3221EC3D43CD75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/PencilCup/PencilCup-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PencilCup/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PencilCup/PencilCup.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = PencilCup;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		24DE6A46937D725A487DAEDFD82B34A3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B058A7A10097688AB16B8BF4F004C34E /* Pods-PencilCup_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PencilCup_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PencilCup_Example/Pods-PencilCup_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PencilCup_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		2722A8705D49B41EDDF3F6407870FC91 /* Debug */ = {
+		3808E4F45B02E9BCBABBB0A719A773F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B97652A6BD63CE0E0307E58C05D7C2C /* Pods-PencilCup_Tests.debug.xcconfig */;
+			baseConfigurationReference = D7795F343FF2058BB962B096882E9594 /* Inlinit.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PencilCup_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PencilCup_Tests/Pods-PencilCup_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PencilCup_Tests;
+				PRODUCT_NAME = Inlinit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		47D17BF0D2CCA818323F20986A2B5B66 /* Release */ = {
+		385C1C4E8BB6DC12EF1C859321ED9E69 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7326354E9BC0FB0DB86433D8AF3870D2 /* Pods-PencilCup_Example.release.xcconfig */;
+			baseConfigurationReference = D7795F343FF2058BB962B096882E9594 /* Inlinit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -564,17 +714,14 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-PencilCup_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Inlinit/Inlinit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Inlinit/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PencilCup_Example/Pods-PencilCup_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Inlinit/Inlinit.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_PencilCup_Example;
+				PRODUCT_NAME = Inlinit;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,17 +769,36 @@
 			};
 			name = Debug;
 		};
-		5CF8D437D7738AD0D225120D7F3B6D51 /* Release */ = {
+		647647480712E69643781A9EDDDA80E9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
+			baseConfigurationReference = B058A7A10097688AB16B8BF4F004C34E /* Pods-PencilCup_Example.debug.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PencilCup;
+				INFOPLIST_FILE = "Target Support Files/Pods-PencilCup_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PencilCup_Example/Pods-PencilCup_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PencilCup_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -668,7 +834,37 @@
 			};
 			name = Release;
 		};
-		A7C7ABC56B275514373D70101D054866 /* Debug */ = {
+		7EFBF08741E3DC99D0C69D0F4D52EED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7326354E9BC0FB0DB86433D8AF3870D2 /* Pods-PencilCup_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PencilCup_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PencilCup_Example/Pods-PencilCup_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PencilCup_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8B0FBCDCC091C77E0567E4EDD9152170 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
 			buildSettings = {
@@ -696,7 +892,117 @@
 			};
 			name = Debug;
 		};
-		DDCB30C208BAB48E2F6A5003FE0A1A72 /* Release */ = {
+		8F0A3429E0DD52B17EAD6D29288691A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B97652A6BD63CE0E0307E58C05D7C2C /* Pods-PencilCup_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-PencilCup_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-PencilCup_Tests/Pods-PencilCup_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_PencilCup_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C66E1604EB6AE1A41FC333D9E29966CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = PencilCup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		CD9D967A5603CC2ED4A09B66A90D83E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7795F343FF2058BB962B096882E9594 /* Inlinit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Inlinit/Inlinit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Inlinit/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Inlinit/Inlinit.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Inlinit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E50AB98EB35271D5E2EA5B4B1423AAD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/PencilCup/PencilCup-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PencilCup/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PencilCup/PencilCup.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = PencilCup;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F7CBBC0AC7F43D6448FFE597319D08E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7795F343FF2058BB962B096882E9594 /* Inlinit.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = Inlinit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		FCA1AB5E7F019C358D81282EAB7A2F7B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7BE626D52E1F2A8639FFC06C9A125401 /* Pods-PencilCup_Tests.release.xcconfig */;
 			buildSettings = {
@@ -726,35 +1032,14 @@
 			};
 			name = Release;
 		};
-		EE18F3BD7FAB56265C7857E493FE0047 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 78EB54CFE39F3160810E319A0AACD01C /* PencilCup.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = PencilCup;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1ADA4D12214CA88F1555FA5B8CDAB541 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Example" */ = {
+		269DD5EBE4E01E4C7B5FCE6327EBBC4E /* Build configuration list for PBXNativeTarget "PencilCup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				24DE6A46937D725A487DAEDFD82B34A3 /* Debug */,
-				47D17BF0D2CCA818323F20986A2B5B66 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		20E98C00F508592AA0C0D95ECA72EACE /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE18F3BD7FAB56265C7857E493FE0047 /* Debug */,
-				5CF8D437D7738AD0D225120D7F3B6D51 /* Release */,
+				8B0FBCDCC091C77E0567E4EDD9152170 /* Debug */,
+				E50AB98EB35271D5E2EA5B4B1423AAD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -768,20 +1053,47 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E363787ADD0BD0B76D1012AFB2F44B6E /* Build configuration list for PBXNativeTarget "PencilCup" */ = {
+		442841CD2B0ACC31E3F71F5F35ED0B77 /* Build configuration list for PBXNativeTarget "PencilCup-PencilCup" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A7C7ABC56B275514373D70101D054866 /* Debug */,
-				0DEA5C00E5A819199810B2495CBE35D9 /* Release */,
+				26EE02292D9B5EF46C3221EC3D43CD75 /* Debug */,
+				C66E1604EB6AE1A41FC333D9E29966CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E5B784DC2C419BD92F47BAC1DEAF7DA7 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Tests" */ = {
+		5691A944ED2A18C8D9A1299C1BBD9CDD /* Build configuration list for PBXNativeTarget "Inlinit-Inlinit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2722A8705D49B41EDDF3F6407870FC91 /* Debug */,
-				DDCB30C208BAB48E2F6A5003FE0A1A72 /* Release */,
+				3808E4F45B02E9BCBABBB0A719A773F7 /* Debug */,
+				F7CBBC0AC7F43D6448FFE597319D08E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		93A673D8889E7F2AC439680973E66986 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				647647480712E69643781A9EDDDA80E9 /* Debug */,
+				7EFBF08741E3DC99D0C69D0F4D52EED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4F212113ED229143D7DE408401BE143 /* Build configuration list for PBXNativeTarget "Pods-PencilCup_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F0A3429E0DD52B17EAD6D29288691A7 /* Debug */,
+				FCA1AB5E7F019C358D81282EAB7A2F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE1CC6849DAC07314FCCBBBE45AEF778 /* Build configuration list for PBXNativeTarget "Inlinit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD9D967A5603CC2ED4A09B66A90D83E4 /* Debug */,
+				385C1C4E8BB6DC12EF1C859321ED9E69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

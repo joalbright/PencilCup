@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6465D01C711C2F92B73DDB15'
+               BlueprintIdentifier = '4601B5DF5D0852835CB2F2E5'
                BlueprintName = 'PencilCup'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'PencilCup.framework'>

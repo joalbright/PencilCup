@@ -1,0 +1,6 @@
+framework module Inlinit {
+  umbrella header "Inlinit-umbrella.h"
+
+  export *
+  module * { export * }
+}
