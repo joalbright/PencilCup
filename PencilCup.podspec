@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "PencilCup"
-  s.version          = "0.1.1"
+  s.version          = "0.2.0"
   s.summary          = "Tools built to help use CoreGraphics more Swiftly"
 
 # This description is used to generate tags and improve search results.
