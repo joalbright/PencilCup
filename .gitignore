@@ -34,3 +34,7 @@ Carthage
 
 .build/
 Packages/
+
+_Pods.xcodeproj
+
+PencilCup.podspec
