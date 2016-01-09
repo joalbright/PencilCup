@@ -96,9 +96,9 @@ infix operator -■ { associativity left precedence 200 }
 
 /// CGContext Fill Path
 /// - discussion : rhs gets set before fill
-public func -■ (lhs: CGContextRef?, rhs: UIColor?) -> CGContextRef? {
-    
-    rhs?.set(); CGContextFillPath(lhs); return lhs
+public func -■ (lhs: CGContextRef?, rhs: CGColor?) -> CGContextRef? {
+
+    CGContextSetFillColorWithColor(lhs, rhs); CGContextFillPath(lhs); return lhs
 
 }
 
@@ -108,9 +108,9 @@ infix operator -□ { associativity left precedence 200 }
 
 /// CGContext Stroke Path
 /// - discussion : rhs gets set before stroke
-public func -□ (lhs: CGContextRef?, rhs: UIColor?) -> CGContextRef? {
+public func -□ (lhs: CGContextRef?, rhs: CGColor?) -> CGContextRef? {
     
-    rhs?.set(); CGContextStrokePath(lhs); return lhs
+    CGContextSetStrokeColorWithColor(lhs, rhs); CGContextStrokePath(lhs); return lhs
 
 }
 
