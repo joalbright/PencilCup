@@ -9,6 +9,7 @@
 import Foundation
 
 public typealias TPoint = (x: CGFloat, y: CGFloat)
+public typealias TCurve = (a1: TPoint, a2: TPoint, p: TPoint)
 public typealias TSize = (width: CGFloat, height: CGFloat)
 public typealias TScale = (x: CGFloat, y: CGFloat)
 public typealias TDelta = (dx: CGFloat, dy: CGFloat)

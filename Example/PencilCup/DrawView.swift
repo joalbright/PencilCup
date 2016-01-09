@@ -11,7 +11,7 @@ import PencilCup
 
 class DrawView: UIView, Drawable {
     
-    var lines: [CGLine] = []
+    var lines: [CGLine] = [] { didSet { setNeedsDisplay() } }
     
     override func drawRect(rect: CGRect) {
         
@@ -21,33 +21,33 @@ class DrawView: UIView, Drawable {
 
     override func layoutSubviews() {
         
-        /// Placeholder demo lines ... comment out to start with blank canvas.
-        lines = [CGLine] {
-            
-            for _ in 0...3 {
-                
-                $0.append(CGLine {
-                    
-                    $0.strokeWidth = CGFloat(drand48()) * 20
-                    
-                    for _ in 0...10 {
-                        
-                        $0.points.append(CGPoint {
-                        
-                            $0.x = CGFloat(drand48()) * UIScreen.mainScreen().bounds.width
-                            $0.y = CGFloat(drand48()) * UIScreen.mainScreen().bounds.height
-                            
-                        })
-                        
-                    }
-                    
-                    print($0.points)
-                    
-                })
-                
-            }
-            
-        }
+        /// Placeholder demo lines ... uncomment to test
+//        lines = [CGLine] {
+//            
+//            for _ in 0...3 {
+//                
+//                $0.append(CGLine {
+//                    
+//                    $0.strokeWidth = CGFloat(drand48()) * 20
+//                    
+//                    for _ in 0...10 {
+//                        
+//                        $0.points.append(CGPoint {
+//                        
+//                            $0.x = CGFloat(drand48()) * UIScreen.mainScreen().bounds.width
+//                            $0.y = CGFloat(drand48()) * UIScreen.mainScreen().bounds.height
+//                            
+//                        })
+//                        
+//                    }
+//                    
+//                    print($0.points)
+//                    
+//                })
+//                
+//            }
+//            
+//        }
         
     }
     
@@ -86,9 +86,9 @@ class DrawView: UIView, Drawable {
         
         lines.append(CGLine {
             
-            $0.stroke = UIColor.cyanColor().CGColor
-            $0.fill = UIColor.magentaColor().CGColor
-            $0.strokeWidth = 10
+            $0.stroke = UIColor.darkGrayColor().CGColor
+            $0.fill = UIColor.clearColor().CGColor
+            $0.strokeWidth = 1
             $0.points.append(touch.locationInView(self))
             
         })

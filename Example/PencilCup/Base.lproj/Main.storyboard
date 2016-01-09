@@ -37,22 +37,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pO-cc-Hrt" customClass="ColorWheel" customModule="PencilCup">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pO-cc-Hrt" customClass="ColorWheel" customModule="PencilCup_Example" customModuleProvider="target">
                                 <rect key="frame" x="25" y="30" width="270" height="270"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="1pO-cc-Hrt" secondAttribute="height" multiplier="1:1" id="smb-It-64W"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="steps">
-                                        <real key="value" value="30"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vfU-cP-TSi">
                                 <rect key="frame" x="21" y="330" width="278" height="218"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxq-76-tKK" customClass="ColorBar" customModule="PencilCup">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rxq-76-tKK" customClass="ColorBar" customModule="PencilCup_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="278" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -63,7 +58,7 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                                <real key="value" value="80"/>
+                                                <real key="value" value="95"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="minValue">
                                                 <real key="value" value="0.0"/>
@@ -73,7 +68,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-nd-boq" customClass="ColorBar" customModule="PencilCup">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kg2-nd-boq" customClass="ColorBar" customModule="PencilCup_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="57" width="278" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -84,23 +79,23 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                                <real key="value" value="50"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="minValue">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                                <real key="value" value="100"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="b">
                                                 <real key="value" value="0.90000000000000002"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="h">
-                                                <real key="value" value="0.45000000000000001"/>
+                                                <real key="value" value="0.94999999999999996"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAp-a5-YRn" customClass="ColorBar" customModule="PencilCup">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wAp-a5-YRn" customClass="ColorBar" customModule="PencilCup_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="114" width="278" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -111,23 +106,20 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                                <real key="value" value="90"/>
+                                                <real key="value" value="0.90000000000000002"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="minValue">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                                <real key="value" value="100"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="h">
-                                                <real key="value" value="0.45000000000000001"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="s">
-                                                <real key="value" value="0.5"/>
+                                                <real key="value" value="0.94999999999999996"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ewy-9w-lCa" customClass="ColorBar" customModule="PencilCup">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ewy-9w-lCa" customClass="ColorBar" customModule="PencilCup_Example" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="171" width="278" height="47"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <userDefinedRuntimeAttributes>
@@ -138,22 +130,19 @@
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="reverse" value="YES"/>
                                             <userDefinedRuntimeAttribute type="number" keyPath="value">
-                                                <real key="value" value="0.0"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="minValue">
                                                 <real key="value" value="0.0"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="maxValue">
-                                                <real key="value" value="100"/>
+                                                <real key="value" value="1"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="b">
                                                 <real key="value" value="0.90000000000000002"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="number" keyPath="h">
-                                                <real key="value" value="0.45000000000000001"/>
-                                            </userDefinedRuntimeAttribute>
-                                            <userDefinedRuntimeAttribute type="number" keyPath="s">
-                                                <real key="value" value="0.5"/>
+                                                <real key="value" value="0.94999999999999996"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </view>

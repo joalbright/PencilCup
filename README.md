@@ -7,7 +7,7 @@ Tools built to help use CoreGraphics more Swiftly
 [![License](https://img.shields.io/cocoapods/l/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
 [![Platform](https://img.shields.io/cocoapods/p/PencilCup.svg?style=flat)](http://cocoapods.org/pods/PencilCup)
 
-![Pencil Cup](./pencilcup.png)
+![Pencil Cup](./Images/pencilcup.png)
 
 ## Usage
 
@@ -58,7 +58,7 @@ CGContextStrokePath(context)
 
 ---
 
-### New Pattern
+### New Patterna
 
 > You now have the ability to set context options using extension methods. Infix operators open up the ability to build a multi point path on a single line of code.
 
@@ -69,8 +69,10 @@ CGContextStrokePath(context)
 - CGContextRef extended with methods that simplify setup
 - infix operators for points and paths
 
+#### Operator Pattern 
+
 ```swift
-let (bgColor,cupColor) = (UIColor(white: 0.9, alpha: 1), UIColor(white: 0.2, alpha: 1))
+let (bgColor,cupColor) = (UIColor(white: 0.9, alpha: 1).CGColor, UIColor(white: 0.2, alpha: 1).CGColor)
 
 let context = UIGraphicsGetCurrentContext()?.round()?.color(bgColor)?.rect(rect)?.fill()
 context?.color(cupColor)?.round()?.line(1)?.offset((rect.width - 188) / 2, (rect.height - 300) / 2)
@@ -83,7 +85,39 @@ context -~- (163.46,50.4,164.15,51.46,163.93,52.54) -+- (154.43,98.52) -□ nil
 ```
 *7 lines of code*
 
+#### Function Pattern
+
+```swift
+let (bgColor,cupColor) = (UIColor(white: 0.9, alpha: 1).CGColor, UIColor(white: 0.2, alpha: 1).CGColor)
+        
+let context = UIGraphicsGetCurrentContext()?.round()?.color(bgColor)?.rect(rect)?.fill()
+context?.color(cupColor)?.round()?.line(1)?.offset((rect.width - 188) / 2, (rect.height - 300) / 2)
+    
+context?.m(126.01,89.44)?.c(116.37,89.19,105.65,89.06,94.35,89.06)?.c(52.35,89.06,18.3,90.8,18.3,94.24)
+context?.c(18.3,97.68,52.35,101.51,94.35,101.51)?.c(104.7,101.51,114.57,101.28,123.57,100.87)?.l(126.01,89.44)?.fill()
+
+context?.m(140,99.75)?.l(150.28,49.72)?.c(150.5,48.64,151.56,47.94,152.64,48.17)?.l(162.37,50.18)
+context?.c(163.46,50.4,164.15,51.46,163.93,52.54)?.l(154.43,98.52)?.stroke()
+```
+*7 lines of code*
+
+> I personally enjoy the operator pattern, because the visuals of the operators make it more readable for me. But both are great patterns.
+
 <!--## Requirements-->
+
+---
+
+### Screens
+
+- CoreGraphics Drawn PencilCup Logo
+- ColorWheel and ColorBar Classes in Example Project
+	- gradient steps are changlable
+	- bars have values to change hue, saturation, brightness, alpha
+
+
+
+![Pencil Cup](./Images/screen1.png) ![Pencil Cup](./Images/screen2.png) ![Pencil Cup](./Images/screen3.png)
+
 
 ## Installation
 

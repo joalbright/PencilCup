@@ -51,7 +51,7 @@ infix operator -~- { associativity left precedence 200 }
 
 
 /// Add Curve To Point
-public func -~- (lhs: CGContextRef?, rhs: (TPoint, TPoint, TPoint)) -> CGContextRef? {
+public func -~- (lhs: CGContextRef?, rhs: TCurve) -> CGContextRef? {
     
     lhs -~- (rhs.0.x,rhs.0.y,rhs.1.x,rhs.1.y,rhs.2.x,rhs.2.y); return lhs
     
@@ -95,10 +95,10 @@ public func -•- (lhs: CGContextRef?, rhs: CGPoint) -> CGContextRef? {
 infix operator -■ { associativity left precedence 200 }
 
 /// CGContext Fill Path
-/// - discussion : rhs may change in the future ... currently used with nil to end
-public func -■ (lhs: CGContextRef?, rhs: AnyObject?) -> CGContextRef? {
+/// - discussion : rhs gets set before fill
+public func -■ (lhs: CGContextRef?, rhs: UIColor?) -> CGContextRef? {
     
-    CGContextFillPath(lhs); return lhs
+    rhs?.set(); CGContextFillPath(lhs); return lhs
 
 }
 
@@ -107,10 +107,10 @@ public func -■ (lhs: CGContextRef?, rhs: AnyObject?) -> CGContextRef? {
 infix operator -□ { associativity left precedence 200 }
 
 /// CGContext Stroke Path
-/// - discussion : rhs may change in the future ... currently used with nil to end
-public func -□ (lhs: CGContextRef?, rhs: AnyObject?) -> CGContextRef? {
+/// - discussion : rhs gets set before stroke
+public func -□ (lhs: CGContextRef?, rhs: UIColor?) -> CGContextRef? {
     
-    CGContextStrokePath(lhs); return lhs
+    rhs?.set(); CGContextStrokePath(lhs); return lhs
 
 }
 
