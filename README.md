@@ -58,7 +58,7 @@ CGContextStrokePath(context)
 
 ---
 
-### New Patterna
+### New Patterns
 
 > You now have the ability to set context options using extension methods. Infix operators open up the ability to build a multi point path on a single line of code.
 

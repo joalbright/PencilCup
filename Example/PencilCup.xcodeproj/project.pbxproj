@@ -17,6 +17,7 @@
 		A939C7151C3E007F001EC587 /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A939C7141C3E007F001EC587 /* DrawView.swift */; };
 		A945D6711C3F0B92006CDF25 /* InkWell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945D6701C3F0B92006CDF25 /* InkWell.swift */; };
 		A945D6731C3F0BAF006CDF25 /* Drawable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945D6721C3F0BAF006CDF25 /* Drawable.swift */; };
+		A945D67B1C40BC01006CDF25 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A945D67A1C40BC01006CDF25 /* ColorViewController.swift */; };
 		A9B091581C3CCC48004E26D0 /* PencilCupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B091561C3CCC48004E26D0 /* PencilCupView.swift */; };
 		A9B091591C3CCC48004E26D0 /* CoreGraphicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		A939C7141C3E007F001EC587 /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
 		A945D6701C3F0B92006CDF25 /* InkWell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = InkWell.swift; path = /Users/RedLeader/_github/PencilCup/Example/PencilCup/InkWell.swift; sourceTree = "<absolute>"; };
 		A945D6721C3F0BAF006CDF25 /* Drawable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Drawable.swift; path = /Users/RedLeader/_github/PencilCup/Example/PencilCup/Drawable.swift; sourceTree = "<absolute>"; };
+		A945D67A1C40BC01006CDF25 /* ColorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorViewController.swift; sourceTree = "<group>"; };
 		A9A896071C3EFEE000E97FE7 /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../Package.swift; sourceTree = "<group>"; };
 		A9B091561C3CCC48004E26D0 /* PencilCupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PencilCupView.swift; sourceTree = "<group>"; };
 		A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreGraphicsView.swift; sourceTree = "<group>"; };
@@ -113,11 +115,9 @@
 			isa = PBXGroup;
 			children = (
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				A9B091561C3CCC48004E26D0 /* PencilCupView.swift */,
-				A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */,
-				A939C7141C3E007F001EC587 /* DrawView.swift */,
-				A945D6701C3F0B92006CDF25 /* InkWell.swift */,
-				A945D6721C3F0BAF006CDF25 /* Drawable.swift */,
+				A945D6771C40BBC7006CDF25 /* PencilCup Logo */,
+				A945D6781C40BBE0006CDF25 /* DrawView */,
+				A945D6791C40BBEA006CDF25 /* ColorPicker */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
 			name = "Example for PencilCup";
@@ -171,6 +171,33 @@
 				16C06420DF5BE75A290010A0 /* Pods-PencilCup_Tests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A945D6771C40BBC7006CDF25 /* PencilCup Logo */ = {
+			isa = PBXGroup;
+			children = (
+				A9B091561C3CCC48004E26D0 /* PencilCupView.swift */,
+				A9B091571C3CCC48004E26D0 /* CoreGraphicsView.swift */,
+			);
+			name = "PencilCup Logo";
+			sourceTree = "<group>";
+		};
+		A945D6781C40BBE0006CDF25 /* DrawView */ = {
+			isa = PBXGroup;
+			children = (
+				A939C7141C3E007F001EC587 /* DrawView.swift */,
+				A945D6721C3F0BAF006CDF25 /* Drawable.swift */,
+			);
+			name = DrawView;
+			sourceTree = "<group>";
+		};
+		A945D6791C40BBEA006CDF25 /* ColorPicker */ = {
+			isa = PBXGroup;
+			children = (
+				A945D67A1C40BC01006CDF25 /* ColorViewController.swift */,
+				A945D6701C3F0B92006CDF25 /* InkWell.swift */,
+			);
+			name = ColorPicker;
 			sourceTree = "<group>";
 		};
 		A9A896041C3EFE0100E97FE7 /* Package Manager */ = {
@@ -385,6 +412,7 @@
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				A939C7151C3E007F001EC587 /* DrawView.swift in Sources */,
 				A945D6731C3F0BAF006CDF25 /* Drawable.swift in Sources */,
+				A945D67B1C40BC01006CDF25 /* ColorViewController.swift in Sources */,
 				A9B091591C3CCC48004E26D0 /* CoreGraphicsView.swift in Sources */,
 				A945D6711C3F0B92006CDF25 /* InkWell.swift in Sources */,
 			);
