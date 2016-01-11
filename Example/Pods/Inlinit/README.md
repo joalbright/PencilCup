@@ -4,9 +4,8 @@ A new design pattern to allow closure initialization.
 <!-- [![CI Status](http://img.shields.io/travis/Jo Albright/Inlinit.svg?style=flat)](https://travis-ci.org/Jo Albright/Inlinit) -->
 
 [![Version](https://img.shields.io/cocoapods/v/Inlinit.svg?style=flat)](http://cocoapods.org/pods/Inlinit)
-
-<!-- [![License](https://img.shields.io/cocoapods/l/Inlinit.svg?style=flat)](http://cocoapods.org/pods/Inlinit)
-[![Platform](https://img.shields.io/cocoapods/p/Inlinit.svg?style=flat)](http://cocoapods.org/pods/Inlinit) -->
+[![License](https://img.shields.io/cocoapods/l/Inlinit.svg?style=flat)](http://cocoapods.org/pods/Inlinit)
+[![Platform](https://img.shields.io/cocoapods/p/Inlinit.svg?style=flat)](http://cocoapods.org/pods/Inlinit)
 
 ## Usage
 
@@ -47,6 +46,33 @@ let randomNumbersArray: [Int] {
 ```
 
 ##### Example 2
+
+```swift
+struct Person: Inlinit {
+        
+    var age: Int = 0
+    var name: String?
+    
+}
+
+// initialize & set properties
+var me = Person {
+    
+    $0.name = "Jo"
+    $0.age = 32
+    
+}
+
+// update properties
+me <- {
+    
+    $0.age = 30
+    $0.name = "John"
+    
+}
+```
+
+##### Example 3
 
 ```swift
 func newLabel(text: String) -> UILabel {
@@ -91,6 +117,19 @@ it, simply add the following line to your Podfile:
 
 ```ruby
 pod "Inlinit"
+```
+
+Inlinit is also available through [Swift Package Manager](https://swift.org/package-manager/). Please take a look at the link to learn more about how to use SPM.
+
+```swift
+import PackageDescription
+
+let package = Package(
+    name: "YOUR_PACKAGE_NAME",
+    dependencies: [
+        .Package(url: "https://github.com/joalbright/Inlinit.git", majorVersion: 0)
+    ]
+)
 ```
 
 ## Author

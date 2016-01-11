@@ -6,11 +6,17 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
+
 import Foundation
+
 
 // MARK: - Context : Settings
 
 public extension CGContextRef {
+    
+    var boundingBox: CGRect { return CGContextGetPathBoundingBox(self) }
+    var currentPoint: CGPoint { return CGContextGetPathCurrentPoint(self) }
+    var isPathEmpty: Bool { return CGContextIsPathEmpty(self) }
     
     /// Sets lineCap and lineJoin to .Round
     func round() -> CGContextRef? {
@@ -56,11 +62,37 @@ public extension CGContextRef {
         
     }
     
+    func containsPoint(x: CGFloat, _ y: CGFloat) -> Bool {
+        
+        return CGContextPathContainsPoint(self, CGPoint(x: x, y: y), .Fill)
+        
+    }
+    
+    func containsPoint(point: CGPoint) -> Bool {
+        
+        return CGContextPathContainsPoint(self, point, .Fill)
+        
+    }
+    
+    func containsPoint(point: TPoint) -> Bool {
+        
+        return CGContextPathContainsPoint(self, CGPoint(x: point.x, y: point.y), .Fill)
+        
+    }
+    
 }
 
-// MARK: - Context : Scale & Offset
+
+// MARK: - Context : Scale, Rotate, & Offset
 
 public extension CGContextRef {
+    
+    /// Rotates by angle
+    func rotate(angle: CGFloat) -> CGContextRef? {
+        
+        CGContextRotateCTM(self, angle); return self
+        
+    }
     
     /// Translates origin by x,y
     func offset(x: CGFloat, _ y: CGFloat) -> CGContextRef? {
@@ -137,14 +169,14 @@ public extension CGContextRef {
 
 public extension CGContextRef {
     
-    /// Add rect to path
-    func rect(rect: CGRect) -> CGContextRef? {
+    /// Add rect(s) to path
+    func rect(rects: CGRect...) -> CGContextRef? {
         
-        CGContextAddRect(self, rect); return self
+        for rect in rects { CGContextAddRect(self, rect) }; return self
     
     }
     
-    /// Add ellipse in rect to path
+    /// Add ellipse(s) in rect to path
     func ellipse(rects: CGRect...) -> CGContextRef? {
         
         for rect in rects { CGContextAddEllipseInRect(self, rect) }; return self
@@ -228,17 +260,17 @@ public extension CGContextRef {
         
     }
     
-    /// Dot with center of point and diameter of strokeWidth
-    func d(point: CGPoint) -> CGContextRef? {
+    /// Dot(s) with center of point(s) and diameter of strokeWidth
+    func d(points: CGPoint...) -> CGContextRef? {
         
-        self.m(point)?.l(point)?.stroke(); return self
+        for point in points { self.m(point)?.l(point)?.stroke() }; return self
         
     }
     
-    /// Dot with center of point and diameter of strokeWidth
-    func d(point: TPoint) -> CGContextRef? {
+    /// Dot(s) with center of point(s) and diameter of strokeWidth
+    func d(points: TPoint...) -> CGContextRef? {
         
-        self.m(point)?.l(point)?.stroke(); return self
+        for point in points { self.m(point)?.l(point)?.stroke() }; return self
         
     }
     

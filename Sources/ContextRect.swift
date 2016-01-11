@@ -10,6 +10,8 @@ import Foundation
 
 public extension CGRect {
     
+    var center: CGPoint { return CGPoint(x: CGRectGetMidX(self), y: CGRectGetMidY(self)) }
+    
     /// Inset all four sides with d
     func inset(d: CGFloat) -> CGRect {
         
@@ -21,12 +23,6 @@ public extension CGRect {
         
         return CGRectInset(self, dx, dy)
     
-    }
-    
-    var center: CGPoint {
-        
-        return CGPoint(x: CGRectGetMidX(self), y: CGRectGetMidY(self))
-        
     }
     
     func pointOnCircleInRect(degree: CGFloat) -> CGPoint {

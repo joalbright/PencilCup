@@ -6,8 +6,6 @@
 //  Copyright (c) 2016 Jo Albright. All rights reserved.
 //
 
-import UIKit
-
 public protocol Inlinit { init() }
 
 public extension Inlinit {
@@ -16,8 +14,16 @@ public extension Inlinit {
     
 }
 
+infix operator <- { }
+
+public func <- <T:Inlinit>(inout lhs: T, rhs: inout T -> ()) {
+    
+    rhs(&lhs)
+    
+}
+
 // MARK: Extensions
 
-extension UIView: Inlinit { }
 extension Array: Inlinit { }
 extension Dictionary: Inlinit { }
+extension Set: Inlinit { }
