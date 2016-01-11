@@ -128,7 +128,7 @@ it, simply add the following line to your Podfile:
 pod "PencilCup"
 ```
 
-PencilCup is also available through [Swift Package Manager](https://swift.org/package-manager/). Please take a look at the link to learn more about how to use SPM.
+PencilCup is also available through [Swift Package Manager](https://swift.org/package-manager/). Please take a look at the link to learn more about how to use SwiftPM.
 
 ```swift
 import PackageDescription
