@@ -66,7 +66,7 @@ CGContextStrokePath(context)
 
 - typealiases PCPoint, PCSize, PCScale, PCDelta
 - CGRect extended with inset methods and global initializer functions
-- CGContextRef extended with methods that simplify setup
+- CGContext extended with methods that simplify setup
 - infix operators for points and paths
 
 #### Operator Pattern 

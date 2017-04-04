@@ -6,85 +6,72 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
 
 /// Move To Point Operator
-infix operator ->- { associativity left precedence 200 }
-
+infix operator ->- : AdditionPrecedence
 
 /// CGContext Move To Point
-public func ->- (lhs: CGContextRef?, rhs: TPoint) -> CGContextRef? {
+func ->- (lhs: CGContext?, rhs: CGPoint) -> CGContext? {
     
-    CGContextMoveToPoint(lhs, rhs.x, rhs.y); return lhs
+    lhs?.move(to: rhs); return lhs
     
 }
 
-/// CGContext Move To Point
-public func ->- (lhs: CGContextRef?, rhs: CGPoint) -> CGContextRef? {
+func ->- (lhs: CGContext?, rhs: TPoint) -> CGContext? {
     
-    CGContextMoveToPoint(lhs, rhs.x, rhs.y); return lhs
+    lhs?.move(to: CGPoint(x: rhs.x, y: rhs.y)); return lhs
     
 }
 
 
 /// Add Line To Point Operator
-infix operator -+- { associativity left precedence 200 }
-
+infix operator -+- : AdditionPrecedence
 
 /// CGContext Add Line To Point
-public func -+- (lhs: CGContextRef?, rhs: TPoint) -> CGContextRef? {
+func -+- (lhs: CGContext?, rhs: CGPoint) -> CGContext? {
     
-    CGContextAddLineToPoint(lhs, rhs.x, rhs.y); return lhs
-    
+    lhs?.addLine(to: rhs); return lhs
+
 }
 
-/// CGContext Add Line To Point
-public func -+- (lhs: CGContextRef?, rhs: CGPoint) -> CGContextRef? {
+func -+- (lhs: CGContext?, rhs: TPoint) -> CGContext? {
     
-    CGContextAddLineToPoint(lhs, rhs.x, rhs.y); return lhs
+    lhs?.addLine(to: CGPoint(x: rhs.x, y: rhs.y)); return lhs
     
 }
 
 
 /// Add Curve To Point Operator
-infix operator -~- { associativity left precedence 200 }
-
+infix operator -~- : AdditionPrecedence
 
 /// Add Curve To Point
-public func -~- (lhs: CGContextRef?, rhs: TCurve) -> CGContextRef? {
+func -~- (lhs: CGContext?, rhs: (CGPoint,CGPoint,CGPoint)) -> CGContext? {
     
-    lhs -~- (rhs.0.x,rhs.0.y,rhs.1.x,rhs.1.y,rhs.2.x,rhs.2.y); return lhs
+    lhs?.addCurve(to: rhs.2, control1: rhs.0, control2: rhs.1); return lhs
     
 }
 
-/// Add Curve To Point
-public func -~- (lhs: CGContextRef?, rhs: (CGPoint,CGPoint,CGPoint)) -> CGContextRef? {
+func -~- (lhs: CGContext?, rhs: (TPoint,TPoint,TPoint)) -> CGContext? {
     
-    lhs -~- (rhs.0.x,rhs.0.y,rhs.1.x,rhs.1.y,rhs.2.x,rhs.2.y); return lhs
+    lhs?.addCurve(to: CGPoint(x: rhs.2.x, y: rhs.2.y), control1: CGPoint(x: rhs.0.x, y: rhs.0.y), control2: CGPoint(x: rhs.1.x, y: rhs.1.y)); return lhs
     
 }
 
-/// Add Curve To Point
-public func -~- (lhs: CGContextRef?, rhs: (CGFloat,CGFloat,CGFloat,CGFloat,CGFloat,CGFloat)) -> CGContextRef? {
+func -~- (lhs: CGContext?, rhs: (CGFloat,CGFloat,CGFloat,CGFloat,CGFloat,CGFloat)) -> CGContext? {
     
-    CGContextAddCurveToPoint(lhs,rhs.0,rhs.1,rhs.2,rhs.3,rhs.4,rhs.5); return lhs
+    lhs?.addCurve(to: CGPoint(x: rhs.4, y: rhs.5), control1: CGPoint(x: rhs.0, y: rhs.1), control2: CGPoint(x: rhs.2, y: rhs.3)); return lhs
     
 }
 
 
 /// Dot Operator 
 /// - description : Line with start and end points that are equal with a stroke width and round cap.
-infix operator -•- { associativity left precedence 200 }
+infix operator -•- : AdditionPrecedence
 
 /// CGContext Create Dot : Diameter = Stroke Width
-public func -•- (lhs: CGContextRef?, rhs: TPoint) -> CGContextRef? {
-    
-    return lhs ->- rhs -+- rhs -□ nil
-
-}
-
-/// CGContext Create Dot : Diameter = Stroke Width
-public func -•- (lhs: CGContextRef?, rhs: CGPoint) -> CGContextRef? {
+func -•- (lhs: CGContext?, rhs: CGPoint) -> CGContext? {
     
     return lhs ->- rhs -+- rhs -□ nil
 
@@ -92,25 +79,27 @@ public func -•- (lhs: CGContextRef?, rhs: CGPoint) -> CGContextRef? {
 
 
 /// Fill Path Operator
-infix operator -■ { associativity left precedence 200 }
+infix operator -■ : AdditionPrecedence
 
 /// CGContext Fill Path
 /// - discussion : rhs gets set before fill
-public func -■ (lhs: CGContextRef?, rhs: CGColor?) -> CGContextRef? {
+func -■ (lhs: CGContext?, rhs: CGColor?) -> CGContext? {
 
-    CGContextSetFillColorWithColor(lhs, rhs); CGContextFillPath(lhs); return lhs
+    if let rhs = rhs { lhs?.setFillColor(rhs) }
+    lhs?.fillPath(); return lhs
 
 }
 
 
 /// Stroke Path Operator
-infix operator -□ { associativity left precedence 200 }
+infix operator -□ : AdditionPrecedence
 
 /// CGContext Stroke Path
 /// - discussion : rhs gets set before stroke
-public func -□ (lhs: CGContextRef?, rhs: CGColor?) -> CGContextRef? {
+func -□ (lhs: CGContext?, rhs: CGColor?) -> CGContext? {
     
-    CGContextSetStrokeColorWithColor(lhs, rhs); CGContextStrokePath(lhs); return lhs
+    if let rhs = rhs { lhs?.setStrokeColor(rhs) }
+    lhs?.strokePath(); return lhs
 
 }
 

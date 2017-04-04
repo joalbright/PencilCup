@@ -1,6 +1,0 @@
-framework module PencilCup {
-  umbrella header "PencilCup-umbrella.h"
-
-  export *
-  module * { export * }
-}

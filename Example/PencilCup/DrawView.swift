@@ -7,13 +7,12 @@
 //
 
 import UIKit
-import PencilCup
 
 class DrawView: UIView, Drawable {
     
     var lines: [CGLine] = [] { didSet { setNeedsDisplay() } }
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
         drawLines(UIGraphicsGetCurrentContext(), lines: lines)
         
@@ -65,8 +64,8 @@ class DrawView: UIView, Drawable {
                         
                         $0.points.append(CGPoint {
                             
-                            $0.x = CGFloat(drand48()) * UIScreen.mainScreen().bounds.width
-                            $0.y = CGFloat(drand48()) * UIScreen.mainScreen().bounds.height
+                            $0.x = CGFloat(drand48()) * UIScreen.main.bounds.width
+                            $0.y = CGFloat(drand48()) * UIScreen.main.bounds.height
                             
                             })
                         
@@ -80,34 +79,34 @@ class DrawView: UIView, Drawable {
         
     }
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard let touch = touches.first else { return }
         
         lines.append(CGLine {
             
-            $0.stroke = UIColor.darkGrayColor().CGColor
-            $0.fill = UIColor.clearColor().CGColor
+            $0.stroke = UIColor.darkGray.cgColor
+            $0.fill = UIColor.clear.cgColor
             $0.strokeWidth = 1
-            $0.points.append(touch.locationInView(self))
+            $0.points.append(touch.location(in: self))
             
         })
         
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        guard let touch = touches.first where lines.count > 0 else { return }
+        guard let touch = touches.first, lines.count > 0 else { return }
         
-        lines[lines.count - 1].points.append(touch.locationInView(self))
+        lines[lines.count - 1].points.append(touch.location(in: self))
         
     }
     
-    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        guard let touch = touches.first where lines.count > 0 else { return }
+        guard let touch = touches.first, lines.count > 0 else { return }
         
-        lines[lines.count - 1].points.append(touch.locationInView(self))
+        lines[lines.count - 1].points.append(touch.location(in: self))
         
     }
 

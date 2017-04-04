@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F423E37263D1CD1B20A383A95421A3124300B2D8",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F423E37263D1CD1B20A383A95421A3124300B2D8" : 9223372036854775807,
+    "BC7D22AD9EBFA3958907C65E8D59AF07B67456E4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F90C44F9-36AD-4600-B650-8C2148F32A71",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F423E37263D1CD1B20A383A95421A3124300B2D8" : "PencilCup\/",
+    "BC7D22AD9EBFA3958907C65E8D59AF07B67456E4" : "Relax\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PencilCup",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Example\/PencilCup.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joalbright\/Relax.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC7D22AD9EBFA3958907C65E8D59AF07B67456E4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joalbright\/PencilCup.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F423E37263D1CD1B20A383A95421A3124300B2D8"
+    }
+  ]
+}

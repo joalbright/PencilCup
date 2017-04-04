@@ -26,7 +26,7 @@ class ColorViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func hueChanged(bar: ColorBar) {
+    @IBAction func hueChanged(_ bar: ColorBar) {
         
         print(bar.value)
         
@@ -36,7 +36,7 @@ class ColorViewController: UIViewController {
         
     }
     
-    @IBAction func brightnessChanged(bar: ColorBar) {
+    @IBAction func brightnessChanged(_ bar: ColorBar) {
         
         saturationBar.b = bar.value
         alphaBar.b = bar.value
@@ -44,10 +44,11 @@ class ColorViewController: UIViewController {
         
     }
     
-    @IBAction func saturationChanged(bar: ColorBar) {
+    @IBAction func saturationChanged(_ bar: ColorBar) {
         
         brightnessBar.s = bar.value
         alphaBar.s = bar.value
         
     }
+    
 }

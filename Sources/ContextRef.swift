@@ -6,271 +6,166 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
-
-import Foundation
+import UIKit
 
 
 // MARK: - Context : Settings
 
-public extension CGContextRef {
+public extension CGContext {
     
-    var boundingBox: CGRect { return CGContextGetPathBoundingBox(self) }
-    var currentPoint: CGPoint { return CGContextGetPathCurrentPoint(self) }
-    var isPathEmpty: Bool { return CGContextIsPathEmpty(self) }
+    var boundingBox: CGRect { return boundingBoxOfPath }
+    var currenCGPoint: CGPoint { return currentPointOfPath }
     
     /// Sets lineCap and lineJoin to .Round
-    func round() -> CGContextRef? {
+    func round() -> CGContext? {
         
-        CGContextSetLineCap(self, .Round); CGContextSetLineJoin(self, .Round); return self
+        setLineCap(.round); setLineJoin(.round); return self
     
     }
     
     /// Sets stroke and fill color
-    func color(color: CGColorRef?) -> CGContextRef? {
+    func color(_ color: CGColor?) -> CGContext? {
         
-        CGContextSetStrokeColorWithColor(self, color)
-        CGContextSetFillColorWithColor(self, color)
+        guard let color = color else { return self }
+        setFillColor(color)
+        setStrokeColor(color)
         return self
         
     }
     
     /// Sets lineWidth
-    func line(width: CGFloat) -> CGContextRef? {
-        
-        CGContextSetLineWidth(self, width); return self
-        
-    }
+    func line(_ width: CGFloat) -> CGContext? { setLineWidth(width); return self }
     
     /// Sets blendMode
-    func blend(mode: CGBlendMode) -> CGContextRef? {
-        
-        CGContextSetBlendMode(self, mode); return self
-        
-    }
+    func blend(_ mode: CGBlendMode) -> CGContext? { setBlendMode(mode); return self }
     
     /// Sets alpha
-    func alpha(alpha: CGFloat) -> CGContextRef? {
-        
-        CGContextSetAlpha(self, alpha); return self
-        
-    }
+    func alpha(_ alpha: CGFloat) -> CGContext? { setAlpha(alpha); return self }
     
     /// Sets flatness
-    func flatness(flatness: CGFloat) -> CGContextRef? {
-        
-        CGContextSetFlatness(self, flatness); return self
-        
-    }
+    func flatness(_ flatness: CGFloat) -> CGContext? { setFlatness(flatness); return self }
     
-    func containsPoint(x: CGFloat, _ y: CGFloat) -> Bool {
-        
-        return CGContextPathContainsPoint(self, CGPoint(x: x, y: y), .Fill)
-        
-    }
+    func containsPoint(_ x: CGFloat, _ y: CGFloat) -> Bool { return pathContains(CGPoint(x: x, y: y), mode: .fill) }
     
-    func containsPoint(point: CGPoint) -> Bool {
-        
-        return CGContextPathContainsPoint(self, point, .Fill)
-        
-    }
-    
-    func containsPoint(point: TPoint) -> Bool {
-        
-        return CGContextPathContainsPoint(self, CGPoint(x: point.x, y: point.y), .Fill)
-        
-    }
+    func containsPoint(_ point: CGPoint) -> Bool { return pathContains(point, mode: .fill) }
     
 }
 
 
 // MARK: - Context : Scale, Rotate, & Offset
 
-public extension CGContextRef {
+public extension CGContext {
     
     /// Rotates by angle
-    func rotate(angle: CGFloat) -> CGContextRef? {
-        
-        CGContextRotateCTM(self, angle); return self
-        
-    }
+    func rotate(_ angle: CGFloat) -> CGContext? { rotate(by: angle); return self }
     
     /// Translates origin by x,y
-    func offset(x: CGFloat, _ y: CGFloat) -> CGContextRef? {
-        
-        CGContextTranslateCTM(self, x, y); return self
-        
-    }
+    func offset(_ x: CGFloat, _ y: CGFloat) -> CGContext? { translateBy(x: x, y: y); return self }
     
     /// Translates origin by point
-    func offset(point: CGPoint) -> CGContextRef? {
-        
-        CGContextTranslateCTM(self, point.x, point.y); return self
-        
-    }
-    
-    /// Translates origin by point
-    func offset(point: TPoint) -> CGContextRef? {
-        
-        CGContextTranslateCTM(self, point.x, point.y); return self
-        
-    }
+    func offset(_ point: CGPoint) -> CGContext? { translateBy(x: point.x, y: point.y); return self }
     
     /// Scales both x & y by xy
-    func scale(xy: CGFloat = 1) -> CGContextRef? {
-        
-        CGContextScaleCTM(self, xy, xy); return self
-        
-    }
+    func scale(_ xy: CGFloat = 1) -> CGContext? { scaleBy(x: xy, y: xy); return self }
     
     /// Scales by x & y
-    func scale(x: CGFloat, _ y: CGFloat) -> CGContextRef? {
-        
-        CGContextScaleCTM(self, x, y); return self
-        
-    }
+    func scale(_ x: CGFloat, _ y: CGFloat) -> CGContext? { scaleBy(x: x, y: y); return self }
     
     /// Scales x & y by scale
-    func scale(scale: TScale) -> CGContextRef? {
-        
-        CGContextScaleCTM(self, scale.x, scale.y); return self
-        
-    }
+    func scale(_ scale: TScale) -> CGContext? { scaleBy(x: scale.x, y: scale.y); return self }
     
 }
 
 // MARK: - Context : Fill, Stroke, & Clear
 
-public extension CGContextRef {
+public extension CGContext {
     
     /// Clears with rect
-    func clear(rect: CGRect? = nil) -> CGContextRef? {
+    func clear(_ rect: CGRect? = nil) -> CGContext? {
         
-        CGContextClearRect(self, rect ?? CGRect(0, 0, 2048, 2048)) ;return self
+        clear(rect ?? CGRect(x: 0, y: 0, width: 2048, height: 2048)); return self
     
     }
     
     /// Strokes available path
-    func stroke() -> CGContextRef? {
-        
-        CGContextStrokePath(self); return self
-    
-    }
+    func stroke() -> CGContext? { strokePath(); return self }
     
     /// Fills available path
-    func fill() -> CGContextRef? {
-        
-        CGContextFillPath(self); return self
-    
-    }
+    func fill() -> CGContext? { fillPath(); return self }
     
 }
 
 // MARK: - Context : Add to Path
 
-public extension CGContextRef {
+public extension CGContext {
     
     /// Add rect(s) to path
-    func rect(rects: CGRect...) -> CGContextRef? {
+    func rect(_ rects: CGRect...) -> CGContext? {
         
-        for rect in rects { CGContextAddRect(self, rect) }; return self
+        for rect in rects { addRect(rect) }; return self
     
     }
     
     /// Add ellipse(s) in rect to path
-    func ellipse(rects: CGRect...) -> CGContextRef? {
+    func ellipse(_ rects: CGRect...) -> CGContext? {
         
-        for rect in rects { CGContextAddEllipseInRect(self, rect) }; return self
+        for rect in rects { addEllipse(in: rect) }; return self
     
     }
     
     /// Add circle with center as c and radius of r to path
-    func circle(c: CGPoint, r: CGFloat) -> CGContextRef? {
+    func circle(_ c: CGPoint, r: CGFloat) -> CGContext? {
         
-        CGContextAddEllipseInRect(self, CGRect(c - (r,r), (r,r) * 2)); return self
+        addEllipse(in: CGRect(origin: c - CGPoint(x: r, y: r), size: CGSize(width: r, height: r) * 2)); return self
     
     }
     
     /// Move path to x,y
-    func m(x: CGFloat, _ y: CGFloat) -> CGContextRef? {
+    func m(_ x: CGFloat, _ y: CGFloat) -> CGContext? {
         
-        CGContextMoveToPoint(self, x, y); return self
-        
-    }
-    
-    /// Move to point
-    func m(point: CGPoint) -> CGContextRef? {
-        
-        CGContextMoveToPoint(self, point.x, point.y); return self
+        move(to: CGPoint(x: x, y: y)); return self
         
     }
     
     /// Move to point
-    func m(point: TPoint) -> CGContextRef? {
+    func m(_ point: CGPoint) -> CGContext? {
         
-        CGContextMoveToPoint(self, point.x, point.y); return self
+        move(to: point); return self
         
     }
     
     /// Add line to x,y
-    func l(x: CGFloat, _ y: CGFloat) -> CGContextRef? {
+    func l(_ x: CGFloat, _ y: CGFloat) -> CGContext? {
         
-        CGContextAddLineToPoint(self, x, y); return self
-        
-    }
-    
-    /// Add line(s) to point(s)
-    func l(points: CGPoint...) -> CGContextRef? {
-        
-        for point in points { CGContextAddLineToPoint(self, point.x, point.y) }; return self
+        addLine(to: CGPoint(x: x, y: y)); return self
         
     }
     
     /// Add line(s) to point(s)
-    func l(points: TPoint...) -> CGContextRef? {
+    func l(_ points: CGPoint...) -> CGContext? {
         
-        for point in points { CGContextAddLineToPoint(self, point.x, point.y) }; return self
-        
-    }
-    
-    /// Add curve to curve point with curve anchors
-    func c(curve: TCurve) -> CGContextRef? {
-        
-        CGContextAddCurveToPoint(self, curve.a1.x, curve.a1.y, curve.a2.x, curve.a2.y, curve.p.x, curve.p.y); return self
+        for point in points { addLine(to: point) }; return self
         
     }
     
     /// Add curve to curve point with curve anchors
-    func c(curve: (CGPoint,CGPoint,CGPoint)) -> CGContextRef? {
+    func c(_ curve: (CGPoint,CGPoint,CGPoint)) -> CGContext? {
         
-        CGContextAddCurveToPoint(self, curve.0.x, curve.0.y, curve.1.x, curve.1.y, curve.2.x, curve.2.y); return self
-        
-    }
-    
-    /// Add curve to curve point with curve anchors
-    func c(a1x: CGFloat, _ a1y: CGFloat, _ a2x: CGFloat, _ a2y: CGFloat, _ px: CGFloat, _ py: CGFloat) -> CGContextRef? {
-        
-        CGContextAddCurveToPoint(self, a1x, a1y, a2x, a2y, px, py); return self
+        addCurve(to: curve.2, control1: curve.0, control2: curve.1); return self
         
     }
     
     /// Dot with center of x,y and diameter of strokeWidth
-    func d(x: CGFloat, _ y: CGFloat) -> CGContextRef? {
+    func d(_ x: CGFloat, _ y: CGFloat) -> CGContext? {
         
-        self.m(x,y)?.l(x,y)?.stroke(); return self
-        
-    }
-    
-    /// Dot(s) with center of point(s) and diameter of strokeWidth
-    func d(points: CGPoint...) -> CGContextRef? {
-        
-        for point in points { self.m(point)?.l(point)?.stroke() }; return self
+        return m(x,y)?.l(x,y)?.stroke()
         
     }
     
     /// Dot(s) with center of point(s) and diameter of strokeWidth
-    func d(points: TPoint...) -> CGContextRef? {
+    func d(_ points: CGPoint...) -> CGContext? {
         
-        for point in points { self.m(point)?.l(point)?.stroke() }; return self
+        for point in points { _ = m(point)?.l(point)?.stroke() }; return self
         
     }
     

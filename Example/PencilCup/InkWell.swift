@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PencilCup
 
 @IBDesignable class ColorBar: UIControl {
 
@@ -20,7 +19,7 @@ import PencilCup
     
     @IBInspectable var isHorizontal: Bool = false
     
-    @IBInspectable var handleColor: UIColor = UIColor.blackColor()
+    @IBInspectable var handleColor: UIColor = UIColor.black
     
     @IBInspectable var h: CGFloat = 0 { didSet { setNeedsDisplay() } }
     @IBInspectable var s: CGFloat = 1 { didSet { setNeedsDisplay() } }
@@ -33,10 +32,10 @@ import PencilCup
     
     var locked: Bool = true
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         guard let touch = touches.first else { return }
-        let location = touch.locationInView(self)
+        let location = touch.location(in: self)
         
         let wh = frame.width < frame.height ? frame.width : frame.height
         
@@ -49,10 +48,10 @@ import PencilCup
         
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        guard let touch = touches.first where !locked else { return }
-        let location = touch.locationInView(self)
+        guard let touch = touches.first, !locked else { return }
+        let location = touch.location(in: self)
         
         let percent = isHorizontal ? (location.x - frame.height / 2) / (frame.width - frame.height) : (location.y - frame.width / 2) / (frame.height - frame.width)
         
@@ -72,11 +71,11 @@ import PencilCup
             
         }
         
-        sendActionsForControlEvents(.ValueChanged)
+        sendActions(for: .valueChanged)
         
     }
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
         steps = steps == 0 ? isHorizontal ? rect.width : rect.height : steps
         
@@ -108,11 +107,11 @@ import PencilCup
                 
             }
             
-            context?.rect(CGRect(rW - (CGFloat(i) * xM * r), rH - (CGFloat(i) * yM * r), width, height))?.fill()
+            _ = context?.rect(CGRect(x: rW - (CGFloat(i) * xM * r), y: rH - (CGFloat(i) * yM * r), width: width, height: height))?.fill()
             
         }
         
-        context?.blend(.Clear)?.line(6.5)
+        _ = context?.blend(.clear)?.line(6.5)
         
         rW = rW > 0 ? rW - rect.height : 0
         rH = rH > 0 ? rH - rect.width : 0
@@ -122,19 +121,19 @@ import PencilCup
         let y = isHorizontal ? 0 : rH - (rect.height - rect.width) * percent * r
         
         let handleWH = rect.width < rect.height ? rect.width : rect.height
-        let handleRect = CGRect(x, y, handleWH, handleWH).inset(3)
+        let handleRect = CGRect(x: x, y: y, width: handleWH, height: handleWH).inset(3)
         
-        context?.ellipse(handleRect)?.stroke()?.blend(.Normal)?.color(handleColor.CGColor)?.line(1)
+        _ = context?.ellipse(handleRect)?.stroke()?.blend(.normal)?.color(handleColor.cgColor)?.line(1)
         
         if percent == 0 && type == .Alpha {
             
             let (l1,l2) = (handleRect.pointOnCircleInRect(-45),handleRect.pointOnCircleInRect(-225))
             
-            context?.line(2)?.color(UIColor.redColor().CGColor) ->- l1 -+- l2
+            _ = context?.line(2)?.color(UIColor.red.cgColor) ->- l1 -+- l2
             
         }
         
-        context?.ellipse(CGRect(x, y, handleWH, handleWH).inset(3))?.stroke()
+        _ = context?.ellipse(CGRect(x: x, y: y, width: handleWH, height: handleWH).inset(3))?.stroke()
         
     }
     
@@ -150,7 +149,7 @@ import PencilCup
     @IBInspectable var saturation: CGFloat = 1
     @IBInspectable var brightness: CGFloat = 1
     
-    override func drawRect(rect: CGRect) {
+    override func draw(_ rect: CGRect) {
         
         layer.cornerRadius = rect.width > rect.height ? rect.width / 2 : rect.width / 2
         layer.masksToBounds = true
@@ -175,7 +174,7 @@ import PencilCup
             let a1 = rect.inset(-100).pointOnCircleInRect(degree - distance / 2 - 0.25)
             let a2 = rect.inset(-100).pointOnCircleInRect(degree + distance / 2 + 0.25)
             
-            context ->- rect.center -+- a1 -+- a2 -■ nil
+            _ = context ->- rect.center -+- a1 -+- a2 -■ nil
             
         }
         
@@ -183,16 +182,16 @@ import PencilCup
     
     // TODO: Add value functionality
     
-    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
         
     }
     
-    override func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
+    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         
-        sendActionsForControlEvents(.ValueChanged)
+        sendActions(for: .valueChanged)
         
     }
     

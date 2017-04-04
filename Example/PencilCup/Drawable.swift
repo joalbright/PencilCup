@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PencilCup
 
 public protocol Drawable {
     
@@ -15,14 +14,14 @@ public protocol Drawable {
 
 extension Drawable {
     
-    public func drawLines(context: CGContextRef?, lines: [CGLine]) {
+    public func drawLines(_ context: CGContext?, lines: [CGLine]) {
         
-        context?.round()
+        _ = context?.round()
         
         for line in lines {
             
-            line.drawPoints(context?.color(line.fill))?.fill()
-            line.drawPoints(context?.color(line.stroke))?.line(line.strokeWidth)?.stroke()
+            _ = line.drawPoints(context?.color(line.fill))?.fill()
+            _ = line.drawPoints(context?.color(line.stroke))?.line(line.strokeWidth)?.stroke()
             
         }
         

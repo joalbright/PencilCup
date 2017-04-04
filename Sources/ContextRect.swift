@@ -6,26 +6,20 @@
 //  Copyright © 2016 Jo Albright. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
-public extension CGRect {
+extension CGRect {
     
-    var center: CGPoint { return CGPoint(x: CGRectGetMidX(self), y: CGRectGetMidY(self)) }
+    var center: CGPoint { return CGPoint(x: midX, y: midY) }
     
     /// Inset all four sides with d
-    func inset(d: CGFloat) -> CGRect {
+    func inset(_ d: CGFloat) -> CGRect {
         
-        return CGRectInset(self, d, d)
+        return insetBy(dx: d, dy: d)
     
     }
     
-    func inset(dx: CGFloat, _ dy: CGFloat) -> CGRect {
-        
-        return CGRectInset(self, dx, dy)
-    
-    }
-    
-    func pointOnCircleInRect(degree: CGFloat) -> CGPoint {
+    func pointOnCircleInRect(_ degree: CGFloat) -> CGPoint {
         
         return CGPoint {
             
@@ -36,35 +30,4 @@ public extension CGRect {
         
     }
     
-}
-
-public func CGRect(x: CGFloat, _ y: CGFloat, _ width: CGFloat, _ height: CGFloat) -> CGRect {
-    
-    return CGRectMake(x, y, width, height)
-
-}
-
-public func CGRect(origin: CGPoint, _ width: CGFloat, _ height: CGFloat) -> CGRect {
-    
-    return CGRect(origin.x, origin.y, width, height)
-
-}
-
-public func CGRect(origin: TPoint, _ width: CGFloat, _ height: CGFloat) -> CGRect {
-    
-    return CGRect(origin.x, origin.y, width, height)
-
-}
-
-public func CGRect(origin: TPoint, _ size: TSize) -> CGRect {
-    
-    return CGRect(origin.x, origin.y, size.width, size.height)
-
-}
-
-
-public func CGRect(origin: CGPoint, _ size: TSize) -> CGRect {
-    
-    return CGRect(origin.x, origin.y, size.width, size.height)
-
 }
